@@ -33,10 +33,10 @@ class Percolation {
         wqf.union(row, i);
         wqf.union(col, size - i - 1);
     }
-   }   
+   }
 
    /**
-    * { function_description }
+    * { function_description }.
     *
     * @param      i     { parameter_description }
     * @param      j     { parameter_description }
@@ -51,20 +51,24 @@ class Percolation {
    /**
     * Links open sites.
     *
-    * @param      row   The row
-    * @param      col   The col
+    * @param      r   The row
+    * @param      c   The col
     */
-   private void linkOpenSites(final int row, final int col) {
+   private void linkOpenSites(final int r, final int c) {
 
-    if (connected[col] && !wqf.connected(row, col))
-    {
-        wqf.union(row, col);
+    if (connected[col] && !wqf.connected(r, c)) {
+        wqf.union(r, c);
     }
    }
-
+   /**
+    * { function_description }
+    *
+    * @return     { description_of_the_return_value }
+    */
    public int numberOfOpenSites() {
+
     return count;
-   }       
+   }   
    /**
     * { returns void}.
     *
