@@ -54,7 +54,7 @@ class Percolation {
     * @param      row   The row
     * @param      col   The col
     */
-   private void LinkOpenSites(int row, int col) {
+   private void LinkOpenSites(final int row, final int col) {
 
     if (connected[col] && !wqf.connected(row, col))
     {
@@ -71,7 +71,7 @@ class Percolation {
     * @param      row   The row
     * @param      col   The col
     */
-   public void open(int row, int col) {
+   public void open(final int row, final int col) {
 
     int index = component(row, col);
     connected[index] = true;
@@ -85,12 +85,12 @@ class Percolation {
     }
     if (bottom < size) {
         LinkOpenSites(index, bottom);
-    } 
+    }
     if (top >= 0) {
         LinkOpenSites(index, top);
     }
-    if(col == 1) {
-        if(col != n) {
+    if (col == 1) {
+        if (col != n) {
             LinkOpenSites(index, index + 1);
         }
         return;
@@ -107,8 +107,8 @@ class Percolation {
    /**
     * Determines if open.
     *
-    * @param      row   The row
-    * @param      col   The col
+    * @param      r   The row
+    * @param      c   The col
     *
     * @return     True if open, False otherwise.
     */
@@ -123,7 +123,7 @@ class Percolation {
     */
    public boolean percolates() {
     return wqf.connected(row, col);
-   }    
+   }
 }
 /**
  * { item_description }.
