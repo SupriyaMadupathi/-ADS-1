@@ -33,18 +33,18 @@ import java.util.*;
 		if (row == n -1) {
 			wqu.union(((n*n)+1), component(row, col));			
 		}
-		if (row > 0) {
+		if (row >= 0) {
 			if (grid[row+1][col] == 1) {
 				wqu.union(component(row,col), component(row+1,col));
 			}
 		}
-		
+
 		if (row <= n-1) {
 			if (grid[row-1][col] == 1) {
 				wqu.union(component(row,col), component(row-1,col));
 			}
 		}
-		if (col > 0) {
+		if (col >= 0) {
 			if (grid[row][col+1] == 1) {
 				wqu.union(component(row,col), component(row,col+1));
 			}
