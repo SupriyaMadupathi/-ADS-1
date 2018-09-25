@@ -68,19 +68,19 @@ class Percolation {
    /**
     * { returns void}.
     *
-    * @param      row   The row
-    * @param      col   The col
+    * @param      r   The row
+    * @param      c   The col
     */
-   public void open(final int row, final int col) {
+   public void open(final int r, final int c) {
 
-    int index = component(row, col);
+    int index = component(r, c);
     connected[index] = true;
     count++;
     int bottom = index + n;
     int top = index - n;
     if (n == 1) {
-        wqf.union(row, index);
-        wqf.union(col, index);
+        wqf.union(r, index);
+        wqf.union(c, index);
 
     }
     if (bottom < size) {
@@ -89,13 +89,13 @@ class Percolation {
     if (top >= 0) {
         linkOpenSites(index, top);
     }
-    if (col == 1) {
-        if (col != n) {
+    if (c == 1) {
+        if (c != n) {
             linkOpenSites(index, index + 1);
         }
         return;
     }
-        if (col == n) {
+        if (c == n) {
         linkOpenSites(index, index - 1);
         return;
     }
