@@ -94,7 +94,8 @@ class Percolation {
             LinkOpenSites(index, index + 1);
         }
         return;
-    } if (col == n) {
+    } if (col == n) 
+    {
         LinkOpenSites(index, index - 1);
         return;
     }
@@ -102,7 +103,7 @@ class Percolation {
     LinkOpenSites(index, index - 1);
 
 
-   } 
+   }
    /**
     * Determines if open.
     *
@@ -111,21 +112,22 @@ class Percolation {
     *
     * @return     True if open, False otherwise.
     */
-   public boolean isOpen(int row, int col) {
+   public boolean isOpen(final int row, final int col) {
 
     return connected[component(row, col)];
    }
    /**
-    * { returns bool }
+    * { returns bool }.
     *
     * @return     { description_of_the_return_value }
     */
    public boolean percolates() {
-
     return wqf.connected(row, col);
-
-   }             
+   }        
 }
+/**
+ * { item_description }.
+ */
 public final class Solution {
 
     /**
