@@ -31,7 +31,6 @@ class Percolation {
      * { var_description }.
      */
     private int count;
-    
    /**
     * Constructs the object.
     *
@@ -50,8 +49,7 @@ class Percolation {
         wqf.union(row, i);
         wqf.union(col, size - i - 1);
     }
-   }   
-
+   }
    /**
     * { function_description }.
     *
@@ -180,3 +178,4 @@ public final class Solution {
 
     }
 }
+
