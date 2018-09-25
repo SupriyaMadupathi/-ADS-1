@@ -20,7 +20,7 @@ class Percolation {
     //
     // @param      n1    The n 1
     //
-   public Percolation(int n1) {
+   public Percolation(final int n1) {
 
     this.n = n1;
     this.count = 0;
@@ -43,7 +43,7 @@ class Percolation {
     *
     * @return     { description_of_the_return_value }
     */
-   public int component(int i, int j) {
+   public int component(final int i, final int j) {
 
         return n * (i - 1) + j - 1;
    }
@@ -54,7 +54,7 @@ class Percolation {
     * @param      row   The row
     * @param      col   The col
     */
-   private void LinkOpenSites(final int row, final int col) {
+   private void linkOpenSites(final int row, final int col) {
 
     if (connected[col] && !wqf.connected(row, col))
     {
@@ -84,23 +84,23 @@ class Percolation {
 
     }
     if (bottom < size) {
-        LinkOpenSites(index, bottom);
+        linkOpenSites(index, bottom);
     }
     if (top >= 0) {
-        LinkOpenSites(index, top);
+        linkOpenSites(index, top);
     }
     if (col == 1) {
         if (col != n) {
-            LinkOpenSites(index, index + 1);
+            linkOpenSites(index, index + 1);
         }
         return;
     }
         if (col == n) {
-        LinkOpenSites(index, index - 1);
+        linkOpenSites(index, index - 1);
         return;
     }
-    LinkOpenSites(index, index + 1);
-    LinkOpenSites(index, index - 1);
+    linkOpenSites(index, index + 1);
+    linkOpenSites(index, index - 1);
 
 
    }
