@@ -8,19 +8,36 @@ class Percolation {
      * { var_description }
      */
     private WeightedQuickUnionUF wqf;
-
+    /** int n
+    */
     private int n;
+    /**
+     * { var_description }
+     */
     private int size;
+    /**
+    * int row
+    */
     private int row;
+    /**
+     * { var_description }.
+     */
     private int col;
+    /**
+     * { var_description }
+     */
     private boolean[] connected;
+    /**
+     * { var_description }
+     */
     private int count;
-    //
-    // create n-by-n grid, with all sites blocked
-    //
-    // @param      n1    The n 1
-    //
-   public Percolation(final int n1) {
+    
+   /**
+    * Constructs the object.
+    *
+    * @param      n1    The n 1
+    */
+   Percolation(final int n1) {
 
     this.n = n1;
     this.count = 0;
@@ -36,7 +53,7 @@ class Percolation {
    }   
 
    /**
-    * { function_description }
+    * { function_description }.
     *
     * @param      i     { parameter_description }
     * @param      j     { parameter_description }
@@ -61,14 +78,14 @@ class Percolation {
     }
    }
    /**
-    * { function_description }
+    * { function_description }.
     *
     * @return     { description_of_the_return_value }
     */
    public int numberOfOpenSites() {
 
     return count;
-   }   
+   }
    /**
     * { returns void}.
     *
