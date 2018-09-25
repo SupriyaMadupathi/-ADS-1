@@ -3,6 +3,7 @@ import java.util.Scanner;
  * Class for percolation.
  */
 class Percolation {
+
     /**
      * { var_description }
      */
@@ -14,8 +15,13 @@ class Percolation {
     private int col;
     private boolean[] connected;
     private int count;
+    //
     // create n-by-n grid, with all sites blocked
+    //
+    // @param      n1    The n 1
+    //
    public Percolation(int n1) {
+
     this.n = n1;
     this.count = 0;
     this.size = n1 * n1;
@@ -29,11 +35,27 @@ class Percolation {
     }
    }   
 
+   /**
+    * { function_description }
+    *
+    * @param      i     { parameter_description }
+    * @param      j     { parameter_description }
+    *
+    * @return     { description_of_the_return_value }
+    */
    public int component(int i, int j) {
+
         return n * (i - 1) + j - 1;
    }
 
+   /**
+    * Links open sites.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    */
    private void LinkOpenSites(int row, int col) {
+
     if (connected[col] && !wqf.connected(row, col))
     {
         wqf.union(row, col);
@@ -43,7 +65,14 @@ class Percolation {
    public int numberOfOpenSites() {
     return count;
    }       
+   /**
+    * { returns void}.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    */
    public void open(int row, int col) {
+
     int index = component(row, col);
     connected[index] = true;
     count++;
@@ -74,16 +103,34 @@ class Percolation {
 
 
    } 
+   /**
+    * Determines if open.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    *
+    * @return     True if open, False otherwise.
+    */
    public boolean isOpen(int row, int col) {
+
     return connected[component(row, col)];
    }
+   /**
+    * { returns bool }
+    *
+    * @return     { description_of_the_return_value }
+    */
    public boolean percolates() {
+
     return wqf.connected(row, col);
 
    }             
 }
 public final class Solution {
 
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
