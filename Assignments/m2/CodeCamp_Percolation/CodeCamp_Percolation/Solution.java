@@ -44,7 +44,7 @@ import java.util.*;
 				wqu.union(component(row,col), component(row-1,col));
 			}
 		}
-		if (col > 0) {
+		if (col == 0) {
 			if (grid[row][col+1] == 1) {
 				wqu.union(component(row,col), component(row,col+1));
 			}
