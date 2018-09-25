@@ -56,7 +56,7 @@ class Percolation {
     */
    private void linkOpenSites(final int r, final int c) {
 
-    if (connected[col] && !wqf.connected(row, col)) {
+    if (connected[c] && !wqf.connected(r, c)) {
         wqf.union(r, c);
     }
    }
