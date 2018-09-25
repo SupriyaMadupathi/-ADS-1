@@ -1,21 +1,21 @@
 import java.util.*;
-// public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
+// public class percocolation {
+//    public percocolation(int n)                // create n-by-n grid, with all sites blocked
 //    public    void open(int row, int col)    // open site (row, col) if it is not open already
 //    public boolean isOpen(int row, int col)  // is site (row, col) open?
 //    public boolean isFull(int row, int col)  // is site (row, col) full?
 //    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
+//    public boolean percocolates()              // does the system percocolate?
 // }
 
 
 // You can implement the above API to solve the problem
- class Percolation {
+ class percocolation {
 		int[][] grid;
 		int openSite;
 		WeightedQuickUnionUF wqu;
 		int n;
-	 Percolation(int n)
+	 percocolation(int n)
 	{
 		grid = new int[n][n];
 		openSite = 0;
@@ -38,6 +38,7 @@ import java.util.*;
 				wqu.union(component(row,col), component(row+1,col));
 			}
 		}
+		
 		if (row <= n-1) {
 			if (grid[row-1][col] == 1) {
 				wqu.union(component(row,col), component(row-1,col));
@@ -66,7 +67,7 @@ import java.util.*;
 	public int numberOfOpenSites() {
 		return openSite;
 	}
-	public boolean percolates() {
+	public boolean percocolates() {
 		return wqu.connected(0, (n*n)+1);
 	}
 
@@ -75,10 +76,10 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int size = s.nextInt();
-		Percolation per = new Percolation(size);
+		percocolation perco = new percocolation(size);
 		while (s.hasNext()) {
-			per.open(s.nextInt(), s.nextInt());
+			perco.open(s.nextInt(), s.nextInt());
 		}
-		System.out.println(per.percolates());
+		System.out.println(perco.percocolates());
 	}
 }
