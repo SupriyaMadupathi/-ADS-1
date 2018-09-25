@@ -5,18 +5,18 @@ import java.util.Scanner;
 class Percolation {
 
     /**
-     * { var_description }
+     * { var_description }.
      */
     private WeightedQuickUnionUF wqf;
-    /** int n
+    /** int n.
     */
     private int n;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int size;
     /**
-    * int row
+    * int row.
     */
     private int row;
     /**
@@ -24,11 +24,11 @@ class Percolation {
      */
     private int col;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean[] connected;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int count;
     
