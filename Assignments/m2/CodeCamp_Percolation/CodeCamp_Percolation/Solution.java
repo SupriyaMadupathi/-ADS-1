@@ -51,13 +51,13 @@ class Percolation {
    /**
     * Links open sites.
     *
-    * @param      row   The row
-    * @param      col   The col
+    * @param      r   The row
+    * @param      c   The col
     */
-   private void linkOpenSites(final int row, final int col) {
+   private void linkOpenSites(final int r, final int c) {
 
     if (connected[col] && !wqf.connected(row, col)) {
-        wqf.union(row, col);
+        wqf.union(r, c);
     }
    }
    /**
