@@ -1,19 +1,53 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for sorted array.
+ */
 class SortedArray {
+     /**
+     * {Initializing an integer array1}.
+     */
 	private int[] array1;
+    /**
+     * {Size of 1st array}.
+     */
 	private int[] array2;
+	/**
+     * {Initializing an integer array2}.
+     */
 	int size1;
+	/**
+     * {Size of 2nd array}.
+     */
 	int size2;
+	/**
+     * {Initializing an integer array3}.
+     */
 	private int[] resultant;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      ar1   The archive 1
+	 * @param      ar2   The archive 2
+	 */
 	SortedArray(int[] ar1, int[] ar2) {
+
 		this.array1 = ar1;
 		this.array2 = ar2;
 		this.size1 = array1.length;
 		this.size2 = array2.length;
 		this.resultant = new int[size1+size2];
 	}
-	public int[] sort(int[] a1,  int[] a2) {
+	/**
+	 * {method to sort ayyars}.
+	 *
+	 * @param      a1    A 1
+	 * @param      a2    A 2
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int[] sort(final int[] a1, final int[] a2) {
+
         int i = 0;
         int j = 0;
         int k = 0;
@@ -24,21 +58,30 @@ class SortedArray {
                 this.resultant[k++] = a2[j++];
             }
         }
-        /*while (i < size1) {
-            this.resultant[j++] = a1[i++];
-        }*/
         while (j <size2) {
             this.resultant[k++] = a2[j++];
         }
         return this.resultant;
     }
 }
-
+/**
+ * Class for solution.
+ */
 public final class Solution {
     
+    /**
+     * Constructs the object.
+     */
     private Solution() {
+
     }
+    /**
+     * { main function}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int sc1 = Integer.parseInt(scan.nextLine());
         int sc2 = Integer.parseInt(scan.nextLine());
