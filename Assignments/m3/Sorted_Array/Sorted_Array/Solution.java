@@ -24,9 +24,9 @@ class SortedArray {
                 this.resultant[k++] = a2[j++];
             }
         }
-        while (i < size1) {
+        /*while (i < size1) {
             this.resultant[j++] = a1[i++];
-        }
+        }*/
         while (j <size2) {
             this.resultant[k++] = a2[j++];
         }
