@@ -15,11 +15,11 @@ class SortedArray {
 	/**
      * {Initializing an integer array2}.
      */
-	int size1;
+	private int size1;
 	/**
      * {Size of 2nd array}.
      */
-	int size2;
+	private int size2;
 	/**
      * {Initializing an integer array3}.
      */
@@ -30,13 +30,13 @@ class SortedArray {
 	 * @param      ar1   The archive 1
 	 * @param      ar2   The archive 2
 	 */
-	SortedArray(int[] ar1, int[] ar2) {
+	SortedArray(final int[] ar1, final int[] ar2) {
 
 		this.array1 = ar1;
 		this.array2 = ar2;
 		this.size1 = array1.length;
 		this.size2 = array2.length;
-		this.resultant = new int[size1+size2];
+		this.resultant = new int[size1 + size2];
 	}
 	/**
 	 * {method to sort ayyars}.
@@ -51,14 +51,14 @@ class SortedArray {
         int i = 0;
         int j = 0;
         int k = 0;
-        while (i < size1 && j <size2) {
+        while (i < size1 && j < size2) {
             if (a1[i] < a2[j]) {
                 this.resultant[k++] = a1[i++];
             } else {
                 this.resultant[k++] = a2[j++];
             }
         }
-        while (j <size2) {
+        while (j < size2) {
             this.resultant[k++] = a2[j++];
         }
         return this.resultant;
@@ -68,7 +68,6 @@ class SortedArray {
  * Class for solution.
  */
 public final class Solution {
-    
     /**
      * Constructs the object.
      */
