@@ -7,46 +7,46 @@ class SortedArray {
      /**
      * {Initializing an integer array1}.
      */
-	private int[] array1;
+    private int[] array1;
     /**
      * {Size of 1st array}.
      */
-	private int[] array2;
-	/**
+    private int[] array2;
+    /**
      * {Initializing an integer array2}.
      */
-	private int size1;
-	/**
+    private int size1;
+    /**
      * {Size of 2nd array}.
      */
-	private int size2;
-	/**
+    private int size2;
+    /**
      * {Initializing an integer array3}.
      */
-	private int[] resultant;
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      ar1   The archive 1
-	 * @param      ar2   The archive 2
-	 */
-	SortedArray(final int[] ar1, final int[] ar2) {
+    private int[] resultant;
+    /**
+     * Constructs the object.
+     *
+     * @param      ar1   The archive 1
+     * @param      ar2   The archive 2
+     */
+    SortedArray(final int[] ar1, final int[] ar2) {
 
-		this.array1 = ar1;
-		this.array2 = ar2;
-		this.size1 = array1.length;
-		this.size2 = array2.length;
-		this.resultant = new int[size1 + size2];
-	}
-	/**
-	 * {method to sort ayyars}.
-	 *
-	 * @param      a1    A 1
-	 * @param      a2    A 2
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int[] sort(final int[] a1, final int[] a2) {
+        this.array1 = ar1;
+        this.array2 = ar2;
+        this.size1 = array1.length;
+        this.size2 = array2.length;
+        this.resultant = new int[size1 + size2];
+    }
+    /**
+     * {method to sort ayyars}.
+     *
+     * @param      a1    A 1
+     * @param      a2    A 2
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] sort(final int[] a1, final int[] a2) {
 
         int i = 0;
         int j = 0;
