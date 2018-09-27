@@ -25,7 +25,7 @@ class Stack {
     /**
      * push the elements.
      *
-     * @param      p     { parameter_description }
+     * @param      s     { parameter_description }
      */
     public void push(final char s) {
 
