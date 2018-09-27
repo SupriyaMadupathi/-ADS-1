@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/**
+ * List of .
+ */
 class Stack {
     
+    /**
+     * Class for node.
+     */
     class Node {
         
         private Node next;
@@ -37,9 +43,16 @@ class Stack {
         return str;
     }
 }
+/**
+ * Class for balanced.
+ */
 class Balanced {
     
+    /**
+     * Constructs the object.
+     */
     Balanced() {
+
     }
     public boolean balance(final String str) {
         Stack sc = new Stack();
@@ -65,11 +78,20 @@ class Balanced {
 
 public final class Solution {
     
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         
     }
     
+    /**
+     * { main function}
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         String[] strarray = new String[n];
