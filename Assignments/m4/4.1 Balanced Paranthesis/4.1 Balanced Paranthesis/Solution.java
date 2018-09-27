@@ -9,7 +9,6 @@ class Stack {
      * Class for node.
      */
     class Node {
-        
         private Node next;
         private char item;
     }
@@ -20,7 +19,6 @@ class Stack {
         head.item = s;
         head.next = ll;
     }
-    
     public char Pop() {
         if (head == null) {
             return 's';
@@ -30,10 +28,22 @@ class Stack {
         head = head.next;
         return m;
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Node gethead() {
+
         return head;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
+
         String str = "";
         Node fun = head;
         while (fun != null) {
@@ -46,7 +56,7 @@ class Stack {
 /**
  * Class for balanced.
  */
-class Balanced { 
+class Balanced {
     /**
      * Constructs the object.
      */
