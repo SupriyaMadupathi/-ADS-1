@@ -9,7 +9,13 @@ class Stack {
      * Class for node.
      */
     class Node {
+       /**
+         * private declaration of node.
+         */
         private Node next;
+         /**
+         * private declaration of char.
+         */
         private char item;
 
     }
