@@ -13,23 +13,22 @@ class Stack {
         private char item;
     }
     private Node head = null;
-    public void Push(final char s) {
+    public void push(final char s) {
         Node ll = head;
         head = new Node();
         head.item = s;
         head.next = ll;
     }
-    public char Pop() {
+    public char pop() {
         if (head == null) {
             return 's';
         }
-        
         char m = head.item;
         head = head.next;
         return m;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -75,9 +74,9 @@ class Balanced {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '[' || str.charAt(i) == '('
                 || str.charAt(i) == '{') {
-                sc.Push(str.charAt(i));
+                sc.push(str.charAt(i));
             } else {
-                char ch = sc.Pop();
+                char ch = sc.pop();
                 if ((ch == '(' && str.charAt(i) == ')') || (ch == '['
                     && str.charAt(i) == ']') || (ch == '{'
                     && str.charAt(i) == '}')) {
