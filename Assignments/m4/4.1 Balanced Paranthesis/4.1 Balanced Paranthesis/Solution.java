@@ -4,7 +4,6 @@ import java.util.Scanner;
  * List of .
  */
 class Stack {
-    
     /**
      * Class for node.
      */
@@ -23,6 +22,11 @@ class Stack {
      * { var_description }.
      */
     private Node head = null;
+    /**
+     * push the elements.
+     *
+     * @param      p     { parameter_description }
+     */
     public void push(final char s) {
 
         Node ll = head;
