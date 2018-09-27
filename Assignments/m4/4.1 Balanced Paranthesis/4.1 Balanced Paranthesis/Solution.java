@@ -11,15 +11,26 @@ class Stack {
     class Node {
         private Node next;
         private char item;
+
     }
+    /**
+     * { var_description }.
+     */
     private Node head = null;
     public void push(final char s) {
+
         Node ll = head;
         head = new Node();
         head.item = s;
         head.next = ll;
     }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public char pop() {
+
         if (head == null) {
             return 's';
         }
