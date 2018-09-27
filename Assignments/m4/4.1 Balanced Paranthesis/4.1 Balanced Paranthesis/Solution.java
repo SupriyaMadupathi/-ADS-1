@@ -46,13 +46,11 @@ class Stack {
 /**
  * Class for balanced.
  */
-class Balanced {
-    
+class Balanced { 
     /**
      * Constructs the object.
      */
     Balanced() {
-
     }
     public boolean balance(final String str) {
         Stack sc = new Stack();
@@ -75,18 +73,14 @@ class Balanced {
         return sc.gethead() == null;
     }
 }
-
 public final class Solution {
-    
     /**
      * Constructs the object.
      */
-    private Solution() {
-        
+    private Solution() {   
     }
-    
     /**
-     * { main function}
+     * { main function}.
      *
      * @param      args  The arguments
      */
