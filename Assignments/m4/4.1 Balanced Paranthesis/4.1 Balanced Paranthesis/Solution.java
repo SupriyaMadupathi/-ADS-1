@@ -51,7 +51,7 @@ class Balanced {
                 char ch = sc.Pop();
                 if ((ch == '(' && str.charAt(i) == ')') || (ch == '['
                     && str.charAt(i) == ']') || (ch == '{'
-                    && str.charAt(i) == ')')) {
+                    && str.charAt(i) == '}')) {
                     
                     continue;
                 } else {
