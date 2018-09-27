@@ -52,7 +52,15 @@ class Balanced {
      */
     Balanced() {
     }
+    /**
+     * { function_description }.
+     *
+     * @param      str   The string
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean balance(final String str) {
+
         Stack sc = new Stack();
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '[' || str.charAt(i) == '('
@@ -63,7 +71,6 @@ class Balanced {
                 if ((ch == '(' && str.charAt(i) == ')') || (ch == '['
                     && str.charAt(i) == ']') || (ch == '{'
                     && str.charAt(i) == '}')) {
-                    
                     continue;
                 } else {
                     return false;
@@ -73,11 +80,14 @@ class Balanced {
         return sc.gethead() == null;
     }
 }
+/**
+ * class for solution.
+ */
 public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {   
+    private Solution() {
     }
     /**
      * { main function}.
