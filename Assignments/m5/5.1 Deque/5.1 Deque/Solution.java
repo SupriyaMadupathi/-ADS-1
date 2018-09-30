@@ -42,7 +42,7 @@ class Deque {
      *
      * @return     True if empty, False otherwise.
      */
-    public boolean isEmpty() { 
+    public boolean isEmpty() {
         return (size == 0);
     }
     /**
