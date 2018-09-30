@@ -21,7 +21,7 @@ class Deque {
     private class Node {
         /**
          * {Variable item of type integer}.
-         */   
+         */
         private int item;
         /**
          * {Variable next of type node}.
@@ -42,16 +42,15 @@ class Deque {
      *
      * @return     True if empty, False otherwise.
      */
-    public boolean isEmpty() {
-       
+    public boolean isEmpty() { 
         return (size == 0);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    public int Size() {
+    public int getSize() {
 
         return size;
     }
@@ -61,7 +60,6 @@ class Deque {
      * @param      int1  The int 1
      */
     public void pushFront(final int int1) {
-        
         if (start == null) {
             start = new Node();
             start.item = int1;
@@ -164,7 +162,7 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
             case "size":
-                int a = deque.Size();
+                int a = deque.getSize();
                 System.out.println(a);
                 break;
             case "pushLeft":
