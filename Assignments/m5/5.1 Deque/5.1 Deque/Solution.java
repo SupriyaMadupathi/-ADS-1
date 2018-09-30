@@ -1,33 +1,67 @@
 import java.util.Scanner;
+/**
+ * Class for deque.
+ */
 class Deque {
+    /**
+     * {Variable first of node type}.
+     */
     private Node start;
-    
+    /**
+     * {Variable last of node type}.
+     */
     private Node end;
-    
+    /**
+     * {Variable last of node type}.
+     */
     private int size;
-    
+    /**
+     * Class for node.
+     */
     private class Node {
-        
+        /**
+         * {Variable item of type integer}.
+         */   
         private int item;
-        
+        /**
+         * {Variable next of type node}.
+         */
         private Node next;
     }
-    
+    /**
+     * Constructs the object.
+     */
     Deque() {
+
         this.start = null;
         this.end = null;
         this.size = 0;
     }
-    
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
+       
         return (size == 0);
     }
-    
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int Size() {
+
         return size;
     }
-    
+    /**
+     * Pushes a front.
+     *
+     * @param      int1  The int 1
+     */
     public void pushFront(final int int1) {
+        
         if (start == null) {
             start = new Node();
             start.item = int1;
@@ -41,8 +75,14 @@ class Deque {
         }
         size++;
     }
-    
+
+    /**
+     * Pushes a back.
+     *
+     * @param      item1  The item 1
+     */
     public void pushBack(final int item1) {
+
         if (end == null) {
             end = new Node();
             end.item = item1;
@@ -56,15 +96,21 @@ class Deque {
         }
         size++;
     }
-    
+    /**
+     * { remove front element}.
+     */
     public void popFront() {
+
         if (start != null) {
             start = start.next;
             size--;
         }
     }
-    
+    /**
+     * { for removing last elements}.
+     */
     public void popBack() {
+
         if (end != null) {
             Node old = start;
             while (old.next.next != null) {
@@ -75,8 +121,13 @@ class Deque {
             size--;
         }
     }
-    
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
+
         if (size == 0) {
             return "[]";
         } else {
@@ -90,14 +141,22 @@ class Deque {
         }
     }
 }
-
+/**
+ * Class for solution.
+ */
 public final class Solution {
-    
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-        
     }
-    
+    /**
+     * { main function }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         Deque deque = new Deque();
