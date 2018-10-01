@@ -21,7 +21,7 @@ class Steque{
 	}
 	void push(String item) {
 		//System.out.println("BHOOM");
-		Node oldstart = new Node();
+		Node oldstart = new Node(item);
         if (start == null) {
             start.data = item;
             start.next = null;
@@ -29,9 +29,10 @@ class Steque{
             size++;
             return;
         } 
-        oldstart = start;
-        start.data = item;
+        
+        //start.data = item;
         start.next = oldstart;
+        start = oldstart;
         size++;
         //System.out.println(start.data);
     }
@@ -41,13 +42,14 @@ class Steque{
             end.next = null;
             start = end;
             size++;
-        } else {
-            Node oldend = end;
-            end.data = items;
+            return;
+        } 
+            Node oldend = new Node(items);
             end.next = null;
-            oldend.next = end;
-        }
-        size++;
+            end.next = oldend;
+            size++;
+        
+        
     }
     String pop() throws Exception{
     	if (size == 0) {
@@ -70,7 +72,6 @@ class Steque{
             String str = "";
             Node temp = start;
             while (temp != end) {
-            	System.out.println(temp.data);
                 str += temp.data + ", ";
                 temp = temp.next;
             }
