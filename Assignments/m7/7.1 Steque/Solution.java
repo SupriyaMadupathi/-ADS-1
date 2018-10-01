@@ -98,7 +98,11 @@ class Solution {
 				case "pop":
 				try{
 			        sq.pop();
-					System.out.println(sq);
+			        if (!sq.isEmpty()) {
+			            System.out.println(sq);	
+			        } else {
+			        	System.out.println("Steque is empty.");
+			        }
 					} catch(Exception e){
 					System.out.println(e.getMessage());
 			}
