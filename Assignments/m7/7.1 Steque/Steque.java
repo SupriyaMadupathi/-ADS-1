@@ -55,7 +55,7 @@ class Steque {
     }
     /**
      * { method to push elements}.
-     *
+     * in this method the time complexity is constant
      * @param      item  The item
      */
     void push(final String item) {
@@ -77,7 +77,7 @@ class Steque {
     }
     /**
      * { enque method }.
-     *
+     * in this method time complexity is constant
      * @param      items  The items
      */
     void enque(final String items) {
@@ -99,7 +99,7 @@ class Steque {
      * { pop method to remove elements}.
      *
      * @return     { description_of_the_return_value }
-     *
+     * in  this method time complexity is constant. 
      * @throws     Exception  { exception_description }
      */
     String pop() throws Exception {
