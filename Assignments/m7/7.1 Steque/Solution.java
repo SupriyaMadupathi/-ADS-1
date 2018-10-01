@@ -10,16 +10,16 @@ class Node {
 		this.data = data1;
 	}
 }
-class LinkedList {
+class Steque{
 	Node start;
 	Node end;
 	int size;
-	LinkedList() {
+	Steque() {
 		size = 0;
 		start = new Node();
 		 end = new Node();
 	}
-	void insert(String item) {
+	void push(String item) {
         if (start == null) {
             start.data = item;
             start.next = null;
@@ -31,12 +31,12 @@ class LinkedList {
         }
         size++;
     }
-	void enque(String items) {
-
+    void enque(String items) {
         if (end == null) {
             end.data = items;
             end.next = null;
-
+            start = end;
+            size++;
         } else {
             Node oldend = end;
             end.data = items;
@@ -45,7 +45,7 @@ class LinkedList {
         }
         size++;
     }
-	String delete(){
+    String pop(){
 		String data = start.data;
 		start = start.next;
 		size--;
@@ -57,34 +57,18 @@ class LinkedList {
 		}else 
 		return false;
 	}
-	int size() {
-		return size;
-	}
-}
-class Steque{
-	LinkedList ll ;
-	Steque (){
-		ll = new LinkedList();
-	}
-	void push(String data){
-		ll.insert(data);
-	}
-	String pop(){
-		return ll.delete();
-	}
-	boolean isEmpty(){
-		return ll.isEmpty();
-	}
-	int size(){
-		return ll.size();
-	}
-	/*public String toString() {
-		Node end = start;
-		String res = "";
-		while(end!=null) {
-
-		}
-	}*/
+	public String toString() {
+        if (size != 0) {
+            String str = "";
+            Node end = start;
+            while (end != null) {
+                str += end.data + ", ";
+                end = end.next;
+            }
+            return str.substring(0, str.length() - 2);
+        }
+        return "[]";
+    }
 }
 class Solution {
 	public static void main(String[] args) {
