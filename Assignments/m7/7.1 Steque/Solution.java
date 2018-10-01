@@ -1,19 +1,30 @@
 import java.util.Scanner;
 
+/**
+ * Class for node.
+ */
 class Node {
     String data;
     Node next;
+    /**
+     * Constructs the object.
+     */
     Node() {
-
     }
-    Node(String data1) {
+    /**
+     * Constructs the object.
+     *
+     * @param      data1  The data 1
+     */
+    Node(final String data1) {
+
         this.data = data1;
     }
 }
 /**
  * Class for steque.
  */
-class Steque{
+class Steque {
     /**
      * start.
      */
@@ -41,7 +52,7 @@ class Steque{
      *
      * @param      item  The item
      */
-    void push(String item) {
+    void push(final String item) {
 
         //System.out.println("BHOOM");
         Node oldstart = new Node(item);
@@ -63,7 +74,7 @@ class Steque{
      *
      * @param      items  The items
      */
-    void enque(String items) {
+    void enque(final String items) {
 
         if (size == 0) {
             end.data = items;
@@ -71,7 +82,7 @@ class Steque{
             start = end;
             size++;
             return;
-        } 
+        }
             Node oldend = new Node(items);
             end.next = null;
             end.next = oldend;
@@ -85,7 +96,7 @@ class Steque{
      *
      * @throws     Exception  { exception_description }
      */
-    String pop() throws Exception{
+    String pop() throws Exception {
 
         if (size == 0) {
             throw new Exception("Steque is empty.");
@@ -103,7 +114,7 @@ class Steque{
     boolean isEmpty() {
         if (size == 0) {
             return true;
-        } else {    
+        } else {
         return false;
         }
     }
