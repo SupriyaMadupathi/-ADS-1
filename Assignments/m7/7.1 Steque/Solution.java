@@ -10,16 +10,39 @@ class Node {
 		this.data = data1;
 	}
 }
+/**
+ * Class for steque.
+ */
 class Steque{
-	Node start;
-	Node end;
-	int size;
+	/**
+     * start.
+     */
+	private Node start;
+	/**
+     * end.
+     */
+	private Node end;
+	/**
+     * size.
+     */
+	private int size;
+	/**
+     * Constructs the object.
+     */
 	Steque() {
+
 		size = 0;
 		start = new Node();
 		 end = new Node();
+
 	}
+	/**
+	 * { method to push elements}.
+	 *
+	 * @param      item  The item
+	 */
 	void push(String item) {
+
 		//System.out.println("BHOOM");
 		Node oldstart = new Node(item);
         if (size == 0) {
@@ -28,15 +51,20 @@ class Steque{
             end = start;
             size++;
             return;
-        } 
-        
+        }
         //start.data = item;
         oldstart.next = start;
         start = oldstart;
         size++;
         //System.out.println(start.data);
     }
+    /**
+     * { enque method }.
+     *
+     * @param      items  The items
+     */
     void enque(String items) {
+
         if (size == 0) {
             end.data = items;
             end.next = null;
@@ -48,11 +76,17 @@ class Steque{
             end.next = null;
             end.next = oldend;
             end = oldend;
-            size++;
-        
-        
+            size++; 
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
+     */
     String pop() throws Exception{
+
     	if (size == 0) {
     		throw new Exception("Steque is empty.");
     	}
@@ -61,13 +95,25 @@ class Steque{
 		size--;
 		return data;
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	boolean isEmpty(){
+
 		if (size==0) {
 			return true;
 		}else 
 		return false;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 * 
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
+
 		if (size != 0) {
 			String str = "";
             Node temp = start;
@@ -78,13 +124,21 @@ class Steque{
             return str.substring(0, str.length() - 2);
 		}
         	//System.out.println("Helle");
-            
-        
       return "[]";
     }
 }
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+
+	/**
+	 * { main method}.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
+
 		Scanner s = new Scanner(System.in);
 		int lines =  Integer.parseInt(s.nextLine());
 		Steque sq = new Steque();
@@ -96,14 +150,14 @@ class Solution {
 				System.out.println(sq.toString());
 				break;
 				case "pop":
-				try{
+				try {
 			        sq.pop();
 			        if (!sq.isEmpty()) {
-			            System.out.println(sq);	
+			            System.out.println(sq);
 			        } else {
 			        	System.out.println("Steque is empty.");
 			        }
-					} catch(Exception e){
+					} catch (Exception e) {
 					System.out.println(e.getMessage());
 			}
 			break;
