@@ -79,7 +79,7 @@ class Steque{
             size++;
     }
     /**
-     * { function_description }
+     * { pop method to remove elements}.
      *
      * @return     { description_of_the_return_value }
      *
@@ -100,12 +100,12 @@ class Steque{
      *
      * @return     True if empty, False otherwise.
      */
-    boolean isEmpty(){
-
-        if (size==0) {
+    boolean isEmpty() {
+        if (size == 0) {
             return true;
-        }else 
+        } else {    
         return false;
+        }
     }
     /**
      * Returns a string representation of the object.
