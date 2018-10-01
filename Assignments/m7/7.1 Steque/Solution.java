@@ -70,6 +70,7 @@ class Steque{
             String str = "";
             Node temp = start;
             while (temp != end) {
+            	System.out.println(temp.data);
                 str += temp.data + ", ";
                 temp = temp.next;
             }
