@@ -20,16 +20,20 @@ class Steque{
 		 end = new Node();
 	}
 	void push(String item) {
+		//System.out.println("BHOOM");
+		Node oldstart = new Node();
         if (start == null) {
             start.data = item;
             start.next = null;
             end = start;
-        } else {
-            Node oldstart = start;
-            start.data = item;
-            start.next = oldstart;
-        }
+            size++;
+            return;
+        } 
+        oldstart = start;
+        start.data = item;
+        start.next = oldstart;
         size++;
+        //System.out.println(start.data);
     }
     void enque(String items) {
         if (end == null) {
@@ -61,16 +65,17 @@ class Steque{
 		return false;
 	}
 	public String toString() {
-        if (size != 0) {
+
+        	//System.out.println("Helle");
             String str = "";
-            Node end = start;
-            while (end != null) {
-                str += end.data + ", ";
-                end = end.next;
+            Node temp = start;
+            while (temp != end) {
+                str += temp.data + ", ";
+                temp = temp.next;
             }
             return str.substring(0, str.length() - 2);
-        }
-        return "[]";
+        
+       // return "[]";
     }
 }
 class Solution {
