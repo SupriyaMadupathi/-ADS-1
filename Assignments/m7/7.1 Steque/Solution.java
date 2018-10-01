@@ -4,7 +4,13 @@ import java.util.Scanner;
  * Class for node.
  */
 class Node {
+    /**
+     * { data}.
+     */
     String data;
+    /**
+     * { next}.
+     */
     Node next;
     /**
      * Constructs the object.
