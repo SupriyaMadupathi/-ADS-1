@@ -45,7 +45,10 @@ class Steque{
         }
         size++;
     }
-    String pop(){
+    String pop() throws Exception{
+    	if (size == 0) {
+    		throw new Exception("Steque is empty.");
+    	}
 		String data = start.data;
 		start = start.next;
 		size--;
@@ -83,8 +86,13 @@ class Solution {
 				System.out.println(str);
 				break;
 				case "pop":
-				str.pop();
-				break;
+				try{
+			        str.pop();
+					System.out.println(str);
+					} catch(Exception e){
+					System.out.println(e.getMessage());
+			}
+			break;
 				case "enque":
 				str.push(tokens[1]);
 				System.out.println(str);
