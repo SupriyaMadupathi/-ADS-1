@@ -77,28 +77,28 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int lines =  Integer.parseInt(s.nextLine());
-		Steque str = new Steque();
+		Steque sq = new Steque();
 		while (s.hasNext()) {
 			String[] tokens = s.nextLine().split(" ");
 			switch (tokens[0]) {
 				case "push":
-				str.push(tokens[1]);
-				System.out.println(str);
+				sq.push(tokens[1]);
+				System.out.println(sq.toString());
 				break;
 				case "pop":
 				try{
-			        str.pop();
-					System.out.println(str);
+			        sq.pop();
+					System.out.println(sq);
 					} catch(Exception e){
 					System.out.println(e.getMessage());
 			}
 			break;
-				case "enque":
-				str.push(tokens[1]);
-				System.out.println(str);
+				case "enqueue":
+				sq.enque(tokens[1]);
+				System.out.println(sq);
 				break;
 				default :
-				str = new Steque();
+				sq = new Steque();
 				System.out.println();
 				break;
 			}
