@@ -22,7 +22,7 @@ class Steque{
 	void push(String item) {
 		//System.out.println("BHOOM");
 		Node oldstart = new Node(item);
-        if (start == null) {
+        if (size == 0) {
             start.data = item;
             start.next = null;
             end = start;
@@ -31,13 +31,13 @@ class Steque{
         } 
         
         //start.data = item;
-        start.next = oldstart;
+        oldstart.next = start;
         start = oldstart;
         size++;
         //System.out.println(start.data);
     }
     void enque(String items) {
-        if (end == null) {
+        if (size == 0) {
             end.data = items;
             end.next = null;
             start = end;
@@ -47,6 +47,7 @@ class Steque{
             Node oldend = new Node(items);
             end.next = null;
             end.next = oldend;
+            end = oldend;
             size++;
         
         
@@ -67,17 +68,19 @@ class Steque{
 		return false;
 	}
 	public String toString() {
-
-        	//System.out.println("Helle");
-            String str = "";
+		if (size != 0) {
+			String str = "";
             Node temp = start;
-            while (temp != end) {
+            while (temp != null) {
                 str += temp.data + ", ";
                 temp = temp.next;
             }
             return str.substring(0, str.length() - 2);
+		}
+        	//System.out.println("Helle");
+            
         
-       // return "[]";
+      return "[]";
     }
 }
 class Solution {
