@@ -1,10 +1,22 @@
 import java.util.Scanner;
 class Ranking {
-	String name;
-	int win;
-	int loss;
-	int draw;
-	/**
+    /**
+     * { this is a variable for country }.
+     */
+    private String name;
+    /**
+     * {this variable for winning }.
+     */
+    private int win;
+    /**
+     * { this ariable for lost matches }.
+     */
+    private int loss;
+    /**
+     * { this variable for draw matches}.
+     */
+    private int draw;
+    /**
      * Constructs the object.
      * time complexity is 1.
      * @param      n     { country name }.
@@ -12,58 +24,58 @@ class Ranking {
      * @param      l     { no of losses }.
      * @param      d     { no of draws }.
      */
-	Ranking(String n, int w, int l, int d) {
+    Ranking(String n, int w, int l, int d) {
 
-		this.name = n;
-		this.win = w;
-		this.loss = l;
-		this.draw = d;
+        this.name = n;
+        this.win = w;
+        this.loss = l;
+        this.draw = d;
 
-	}
-	/**
-	 * Gets the name.
-	 *
-	 * @return     The name.
-	 */
-	String getName(){
+    }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+    String getName(){
 
-		return this.name;
-	}
-	/**
-	 * Gets the win.
-	 *
-	 * @return     The win.
-	 */
-	int getWin() {
+        return this.name;
+    }
+    /**
+     * Gets the win.
+     *
+     * @return     The win.
+     */
+    int getWin() {
 
-		return this.win;
-	}
-	/**
-	 * Gets the loss.
-	 *
-	 * @return     The loss.
-	 */
-	int getLoss() {
+        return this.win;
+    }
+    /**
+     * Gets the loss.
+     *
+     * @return     The loss.
+     */
+    int getLoss() {
 
-		return this.loss;
-	}
-	/**
-	 * Gets the draw.
-	 *
-	 * @return     The draw.
-	 */
-	int getDraw() {
+        return this.loss;
+    }
+    /**
+     * Gets the draw.
+     *
+     * @return     The draw.
+     */
+    int getDraw() {
 
-		return this.draw;
-	}
-	/**
-	 * {method to compare elements}.
-	 *
-	 * @param      that  The that
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int compareTo(final Ranking that) {
+        return this.draw;
+    }
+    /**
+     * {method to compare elements}.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Ranking that) {
 
         if (this.getWin() < that.getWin()) {
             return -1;
@@ -121,17 +133,17 @@ class Ranking {
      */
     void exchange(Ranking[] a, int i, int min) {
 
-		Ranking temp = a[min];
-		a[min] = a[i];
-		a[i] = temp;
-	}
-	//takes O(n^2) time complexity
-	/**
-	 * Returns a string representation of the object.
-	 *
-	 * @return     String representation of the object.
-	 */
-	public String toString() {
+        Ranking temp = a[min];
+        a[min] = a[i];
+        a[i] = temp;
+    }
+    //takes O(n^2) time complexity
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
 
         String s = "";
         for (int i = 0; i < size; i++) {
@@ -140,36 +152,33 @@ class Ranking {
         return s.substring(0, s.length() - 1);
     }
 
-	//takes O(n^2) time complexity.
+    //takes O(n^2) time complexity.
     /**
      * {method for insertion sort }
      */
     void InsertionSort() {
 
-		for(int i = 0; i < size-1; i++) {
-			int min = i; 
-			for(int j = i+1; j > 0; j--) {
-				if(less(team,j,j-1)) {
-					exchange(team,j,j-1);		
-				}
-			}
-			
-			
-		}
-	}
-	
-	// takes O(1) time complexity.
-	/**
-	* @param      teams  The teams
-	* @param      j      { parameter_description }
-	* @param      min    The minimum
-	*
-	* @return     { description_of_the_return_value }
-	*/
-	boolean less(Ranking[] teams, int j, int min) {
+        for(int i = 0; i < size-1; i++) {
+            int min = i; 
+            for(int j = i+1; j > 0; j--) {
+                if(less(team,j,j-1)) {
+                    exchange(team,j,j-1);       
+                }
+    }
+        }
+    }
+    // takes O(1) time complexity.
+    /**
+    * @param      teams  The teams
+    * @param      j      { parameter_description }
+    * @param      min    The minimum
+    *
+    * @return     { description_of_the_return_value }
+    */
+    boolean less(Ranking[] teams, int j, int min) {
 
-		return team[j].compareTo(team[min]) > 0;
-	}
+        return team[j].compareTo(team[min]) > 0;
+    }
 }
 /**
  * this is a solution class.
