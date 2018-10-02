@@ -101,9 +101,19 @@ class Ranking {
      * Class for sorting.
      */
     class Sorting {
+        /**
+         * { var_description }.
+         */
     private final int twenty = 20;
+    /**
+     * { var_description }.
+     */
     private Ranking[] team;
+    /**
+     * { int size }.
+     */
     private int size;
+
     /**
      * Constructs the object.
      * time complexity is 1.
@@ -131,7 +141,7 @@ class Ranking {
      * @param      i     { parameter_description }
      * @param      min   The minimum
      */
-    void exchange(Ranking[] a, int i, int min) {
+    void exchange(final Ranking[] a, final int i, final int min) {
 
         Ranking temp = a[min];
         a[min] = a[i];
@@ -154,7 +164,7 @@ class Ranking {
 
     //takes O(n^2) time complexity.
     /**
-     * {method for insertion sort }
+     * {method for insertion sort }.
      */
     void insertionSort() {
 
@@ -211,4 +221,4 @@ public final class Solution {
         sort.insertionSort();
         System.out.println(sort.toString());
     }
-}
+}  
