@@ -158,11 +158,11 @@ class Ranking {
      */
     void InsertionSort() {
 
-        for(int i = 0; i < size-1; i++) {
+        for(int i = 0; i < size - 1; i++) {
             int min = i; 
             for(int j = i+1; j > 0; j--) {
-                if(less(team,j,j-1)) {
-                    exchange(team,j,j-1);       
+                if(less(team, j, j - 1)) {
+                    exchange(team, j, j - 1);       
                 }
     }
         }
@@ -175,7 +175,7 @@ class Ranking {
     *
     * @return     { description_of_the_return_value }
     */
-    boolean less(Ranking[] teams, int j, int min) {
+    boolean less(final Ranking[] teams, final int j, final int min) {
 
         return team[j].compareTo(team[min]) > 0;
     }
@@ -184,14 +184,11 @@ class Ranking {
  * this is a solution class.
  */
 public final class Solution {
-    
     /**
      * Constructs the object.
      */
-    private Solution() {
-        
+    private Solution() {   
     }
-    
     /**
      * { main function}.
      *
