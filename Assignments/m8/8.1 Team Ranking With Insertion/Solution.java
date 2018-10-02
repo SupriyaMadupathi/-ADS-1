@@ -156,13 +156,13 @@ class Ranking {
     /**
      * {method for insertion sort }
      */
-    void InsertionSort() {
+    void insertionSort() {
 
-        for(int i = 0; i < size - 1; i++) {
-            int min = i; 
-            for(int j = i+1; j > 0; j--) {
-                if(less(team, j, j - 1)) {
-                    exchange(team, j, j - 1);       
+        for (int i = 0; i < size - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j > 0; j--) {
+                if (less(team, j, j - 1)) {
+                    exchange(team, j, j - 1);
                 }
     }
         }
@@ -187,7 +187,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {   
+    private Solution() {
     }
     /**
      * { main function}.
@@ -208,7 +208,7 @@ public final class Solution {
                 Integer.parseInt(input[three]));
             sort.add(cricket);
         }
-        sort.InsertionSort();
+        sort.insertionSort();
         System.out.println(sort.toString());
     }
 }
