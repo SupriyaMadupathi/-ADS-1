@@ -1,5 +1,9 @@
 import java.util.Scanner;
+/**
+ * Class for ranking.
+ */
 class Ranking {
+
     /**
      * { this is a variable for country }.
      */
@@ -24,7 +28,7 @@ class Ranking {
      * @param      l     { no of losses }.
      * @param      d     { no of draws }.
      */
-    Ranking(String n, int w, int l, int d) {
+    Ranking(final String n, final int w, final int l, final int d) {
 
         this.name = n;
         this.win = w;
@@ -37,7 +41,7 @@ class Ranking {
      *
      * @return     The name.
      */
-    String getName(){
+    String getName() {
 
         return this.name;
     }
@@ -221,4 +225,4 @@ public final class Solution {
         sort.insertionSort();
         System.out.println(sort.toString());
     }
-}  
+}
