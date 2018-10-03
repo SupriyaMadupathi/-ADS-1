@@ -55,7 +55,7 @@ class Steque {
     }
     /**
      * { method to push elements}.
-     * in this method the time complexity is constant
+     *This method time complexity is O(1), it takes const time.
      * @param      item  The item
      */
     void push(final String item) {
@@ -76,8 +76,8 @@ class Steque {
         //System.out.println(start.data);
     }
     /**
-     * { enque method }.
-     * in this method time complexity is constant
+     * This method tme complexity is O(1) takes constant time.
+     *Each time it takes one item and executes.
      * @param      items  The items
      */
     void enque(final String items) {
@@ -99,7 +99,7 @@ class Steque {
      * { pop method to remove elements}.
      *
      * @return     { description_of_the_return_value }
-     * in  this method time complexity is constant. 
+     * This method takes constant time. O(1)
      * @throws     Exception  { exception_description }
      */
     String pop() throws Exception {
@@ -114,7 +114,7 @@ class Steque {
     }
     /**
      * Determines if empty.
-     *
+     **this method takes constant time. O(1).
      * @return     True if empty, False otherwise.
      */
     boolean isEmpty() {
@@ -126,7 +126,7 @@ class Steque {
     }
     /**
      * Returns a string representation of the object.
-     *
+     * It takes O(n) time complexity. Iterates till temp!= null.
      * @return     String representation of the object.
      */
     public String toString() {
