@@ -225,14 +225,14 @@ public final class Solution {
 
         Scanner sc = new Scanner(System.in);
         Sorting sort = new Sorting();
-        final int one = 1;
+        /*final int one = 1;
         final int two = 2;
-        final int three = 3;
+        final int three = 3;*/
         while (sc.hasNext()) {
             String[] input = sc.nextLine().split(",");
             Ranking cricket = new Ranking(input[0],
-                Integer.parseInt(input[one]), Integer.parseInt(input[two]),
-                Integer.parseInt(input[three]));
+                Integer.parseInt(input[1]), Integer.parseInt(input[2]),
+                Integer.parseInt(input[3]));
             sort.add(cricket);
         }
         sort.insertionSort();
