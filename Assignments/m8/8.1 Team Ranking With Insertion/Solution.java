@@ -137,7 +137,7 @@ class Ranking {
     public void add(final Ranking r) {
 
         team[size++] = r;
-        if (size > 20) {
+        if (size > twenty) {
             resize();
         }
     }
