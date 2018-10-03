@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for ranking.
  */
@@ -136,6 +137,18 @@ class Ranking {
     public void add(final Ranking r) {
 
         team[size++] = r;
+        if (size > 20) {
+            resize();
+        }
+    }
+
+    /**
+     * { method for resizing the array}
+     * takes O(1) complexity.
+     */
+    void resize() {
+
+        team = Arrays.copyOf(team, size * 2);
     }
     //takes O(n) time complexity.
     /**
