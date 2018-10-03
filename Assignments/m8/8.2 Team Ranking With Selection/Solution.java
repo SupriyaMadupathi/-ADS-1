@@ -184,14 +184,15 @@ class Ranking {
      * {method for insertion sort }.
      */
     void selectionSort() {
-
-        for (int i = 0; i < size - 1; i++) {
-            int min = i;
-            for (int j = i + 1; j > 0; j--) {
-                if (less(team, j, j - 1)) {
-                    exchange(team, j, j - 1);
+        for(int i = 0; i < size-1; i++) {
+            int min = i; 
+            for(int j = i+1; j < size; j++) {
+                if(less(team,j,min)) {
+                    min = j;
                 }
-    }
+            }
+            exchange(team,i,min);
+            
         }
     }
     // takes O(1) time complexity.
