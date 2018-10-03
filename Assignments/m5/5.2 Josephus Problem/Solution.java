@@ -4,121 +4,186 @@ import java.util.Scanner;
  */
 class Deque {
     /**
-     * {Variable first of type node}.
+     * no of elements.
      */
-    private Node first;
+    private int noOfElements;
     /**
-     * {Variable last of type node}.
+     * first, last nodes.
      */
-    private Node last;
-    /**
-     * {Variable size of type integer}.
-     */
-    private int size;
+    private Node first, last;
     /**
      * Class for node.
      */
     private class Node {
         /**
-         * {Variable name of type int}.
+         * data.
          */
-        private int name;
+        private int data;
         /**
-         * {Variable next of type node}.
+         * next link.
          */
         private Node next;
+        /**
+         * Constructs the object.
+         *
+         * @param      val   The value
+         * @param      link  The link
+         */
+        Node(final int val, final Node link) {
+            this.data = val;
+            this.next = link;
+        }
     }
     /**
      * Constructs the object.
      */
     Deque() {
+        noOfElements = 0;
         first = null;
         last = null;
-        size = 0;
+    }
+    /**
+     * Pushes a left.
+     *
+     * @param      value  The value
+     */
+    void pushLeft(final int value) {
+        if (first == null) {
+            first = new Node(value, null);
+            last = first;
+        } else {
+            Node newnode = new Node(value, first);
+            first = newnode;
+        }
+
+        noOfElements++;
+    }
+    /**
+     * Pushes a right.
+     *
+     * @param      value  The value
+     */
+    void pushRight(final int value) {
+        if (last == null) {
+            last = new Node(value, null);
+            first = last;
+        } else {
+            Node newnode = new Node(value, null);
+            last.next = newnode;
+            last = newnode;
+        }
+        noOfElements++;
+    }
+    /**
+     * popleft.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int popLeft() {
+        if (first != null) {
+            Node popped = first;
+            first = first.next;
+            popped.next = null;
+            noOfElements--;
+            return popped.data;
+
+        } else {
+            return 0;
+        }
+    }
+    /**
+     * pop right.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int popRight() {
+        if (last != null) {
+            Node temp = null;
+            Node popped = last;
+            Node element = first;
+            while (element != last) {
+                temp = element;
+                element = element.next;
+            }
+            last = temp;
+            last.next = null;
+            //popped.next = null;
+            noOfElements--;
+            return popped.data;
+        } else {
+            return 0;
+        }
+    }
+    /**
+     * size.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int size() {
+        return noOfElements;
     }
     /**
      * Determines if empty.
      *
      * @return     True if empty, False otherwise.
      */
-    public boolean isEmpty() {
-        return (first == null);
+    boolean isEmpty() {
+        return first == null;
     }
     /**
-     * {Method to pop an element from the front}.
+     * prints.
      *
-     * @return     {Integer}
+     * @return     { description_of_the_return_value }
      */
-    public int popFront() {
-        if (first != null) {
-            int item = first.name;
-            first = first.next;
-            return item;
+    String print() {
+        if (noOfElements != 0) {
+            String str = "";
+            Node temp = first;
+            while (temp != null) {
+                str += Integer.toString(temp.data) + ", ";
+                temp = temp.next;
+            }
+            return "[" + str.substring(0, str.length() - 2) + "]";
         }
-        return last.name;
+        return "[]";
+
     }
-    /**
-     * Method to push back an element.
-     *
-     * @param      name  The name
-     */
-    public void pushBack(final int name) {
-        if (last == null) {
-            last = new Node();
-            last.name = name;
-            last.next = null;
-            first = last;
-        } else {
-            Node temp = last;
-            last = new Node();
-            last.name = name;
-            last.next = null;
-            temp.next = last;
-        }
-    }
-    /**
-     * {Method to get size}.
-     *
-     * @return     {Integer}
-     */
-    public int getsize() {
-        return size;
-    }
+
 }
 /**
  * Class for solution.
  */
-public final class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //Empty.
+        //function.
     }
     /**
-     * {Main method}.
+     * main.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num = Integer.parseInt(scan.nextLine());
-        while (scan.hasNext()) {
-            String[] tokens = scan.nextLine().split(" ");
-            int count = Integer.parseInt(tokens[0]);
-            int rounds = Integer.parseInt(tokens[1]);
-            String s = "";
-            Deque deque = new Deque();
-            for (int i = 0; i < count; i++) {
-                deque.pushBack(i);
+        Scanner sc = new Scanner(System.in);
+        int noOfinputs = sc.nextInt();
+        for (int i = 0; i < noOfinputs; i++) {
+            Deque queue = new Deque();
+            sc.nextLine();
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            for (int j = 0; j < n; j++) {
+                queue.pushRight(j);
             }
-            while (!deque.isEmpty()) {
-                for (int i = 0; i < rounds - 1; i++) {
-                    deque.pushBack(deque.popFront());
+            while (queue.size() != 1) {
+                for (int j = 0; j < m - 1; j++) {
+                    queue.pushRight(queue.popLeft());
                 }
-                s += deque.popFront() + " ";
+                System.out.print(queue.popLeft() + " ");
+                //queue.print();
             }
-            System.out.print(s.substring(0, s.length() - 1));
+            System.out.print(queue.popLeft());
             System.out.println();
         }
     }
