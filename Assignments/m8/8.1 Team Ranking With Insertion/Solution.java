@@ -225,9 +225,6 @@ public final class Solution {
 
         Scanner sc = new Scanner(System.in);
         Sorting sort = new Sorting();
-        /*final int one = 1;
-        final int two = 2;
-        final int three = 3;*/
         while (sc.hasNext()) {
             String[] input = sc.nextLine().split(",");
             Ranking cricket = new Ranking(input[0],
