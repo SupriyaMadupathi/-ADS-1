@@ -232,7 +232,7 @@ public final class Solution {
             String[] input = sc.nextLine().split(",");
             Ranking cricket = new Ranking(input[0],
                 Integer.parseInt(input[1]), Integer.parseInt(input[2]),
-                Integer.parseInt(input[3]));
+                Integer.parseInt(input[2 + 1]));
             sort.add(cricket);
         }
         sort.insertionSort();
