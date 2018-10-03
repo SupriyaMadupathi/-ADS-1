@@ -184,9 +184,9 @@ class Ranking {
      * {method for insertion sort }.
      */
     void selectionSort() {
-        for (int i = 0; i < size-1; i++) {
-            int min = i; 
-            for (int j = i+1; j < size; j++) {
+        for (int i = 0; i < size - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < size; j++) {
                 if (less(team, j, min)) {
                     min = j;
                 }
