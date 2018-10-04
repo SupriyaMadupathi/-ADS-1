@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:6:15: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:40:27: Empty statement. [EmptyStatement]
+[ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:41:27: Empty statement. [EmptyStatement]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
