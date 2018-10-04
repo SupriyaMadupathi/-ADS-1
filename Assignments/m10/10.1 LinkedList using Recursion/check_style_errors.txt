@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 1 errors.
