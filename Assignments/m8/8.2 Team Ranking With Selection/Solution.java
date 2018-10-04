@@ -128,7 +128,8 @@ class Ranking {
         team = new Ranking[twenty];
         size = 0;
     }
-    //takes O(n) time complexity
+    //this method has constant time. 
+    //takes O(1) time complexity.
     /**
      * { method for adding }.
      *
@@ -144,14 +145,15 @@ class Ranking {
 
     /**
      * { method for resizing the array}
+     * this method takes constant time.
      * takes O(1) complexity.
      */
     void resize() {
 
         team = Arrays.copyOf(team, size * 2);
     }
-    //takes O(n) time complexity.
-    /**
+    //takes O(1) time complexity.
+    /**this method has constant time complexity.
      * { method for swapping }.
      *
      * @param      a     { parameter_description }
@@ -164,6 +166,7 @@ class Ranking {
         a[min] = a[i];
         a[i] = temp;
     }
+    // this method has a complexity of n
     //takes O(n^2) time complexity
     /**
      * Returns a string representation of the object.
@@ -178,8 +181,8 @@ class Ranking {
         }
         return s.substring(0, s.length() - 1);
     }
-
-    //takes O(n^2) time complexity.
+    //this method has a complexity of n
+    //it takes O(n^2) time complexity.
     /**
      * {method for insertion sort }.
      */
@@ -194,6 +197,7 @@ class Ranking {
             exchange(team, i, min);
         }
     }
+    // this method has constant time complexity.
     // takes O(1) time complexity.
     /**
     * @param      teams  The teams
