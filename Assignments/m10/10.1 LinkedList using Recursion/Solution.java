@@ -29,9 +29,10 @@ class LinkedList {
 	Node insertAt(int pos, Node first, Node obj, int count) throws Exception{
 		if (pos == count) {
 			obj.next =first;
+			size++;
 			return obj;
 		}
-		first.next=insertAt(pos,first.next,obj,count+1);
+		first.next = insertAt(pos,first.next,obj,count+1);
 		return first;
 	}
 	void reverse(){
