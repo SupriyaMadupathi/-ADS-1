@@ -38,7 +38,8 @@ public class Solution {
                 System.out.println("No elements to reverse.");
                 }
                 break;
-                default : ;
+                default :
+                break;
             }
         }
     }
