@@ -1,96 +1,212 @@
-import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for ranking.
+ */
 class Ranking {
-    
-    String teamname;
-    int win;
-    int loss;
-    int draw;
-    Ranking(String name,int winn, int lost, int draws) {
-        this.teamname = name;
-        this.win = winn;
-        this.loss = lost;
-        this.draw = draws;
+
+    /**
+     * { this is a variable for country }.
+     */
+    private String name;
+    /**
+     * {this variable for winning }.
+     */
+    private int win;
+    /**
+     * { this ariable for lost matches }.
+     */
+    private int loss;
+    /**
+     * { this variable for draw matches}.
+     */
+    private int draw;
+    /**
+     * Constructs the object.
+     * time complexity is 1.
+     * @param      n     { country name }.
+     * @param      w     { no of wins }.
+     * @param      l     { no of losses }.
+     * @param      d     { no of draws }.
+     */
+    Ranking(final String n, final int w, final int l, final int d) {
+
+        this.name = n;
+        this.win = w;
+        this.loss = l;
+        this.draw = d;
+
     }
-    public String getTeamName() {
-        return this.teamname;
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+    String getName() {
+
+        return this.name;
     }
-    public int getwinn() {
+    /**
+     * Gets the win.
+     *
+     * @return     The win.
+     */
+    int getWin() {
+
         return this.win;
     }
-    public int getLost() {
+    /**
+     * Gets the loss.
+     *
+     * @return     The loss.
+     */
+    int getLoss() {
+
         return this.loss;
     }
-    public int getDraw() {
+    /**
+     * Gets the draw.
+     *
+     * @return     The draw.
+     */
+    int getDraw() {
+
         return this.draw;
     }
-    public int compareTo(Ranking comp) {
-        if(this.win > comp.win) {
-            return 1;
-        }
-        if(this.win < comp.win) {
+    /**
+     * {method to compare elements}.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Ranking that) {
+
+        if (this.getWin() < that.getWin()) {
             return -1;
-        }
-        if(this.loss < comp.loss) {
+        } else if (this.getWin() > that.getWin()) {
             return 1;
-        }
-        if(this.loss > comp.loss) {
-            return -1;
-        }
-        if(this.draw > comp.draw) {
+        } else {
+        if (this.getLoss() < that.getLoss()) {
             return 1;
-        }
-        if(this.draw < comp.draw) {
+        } else if (this.getLoss() > that.getLoss()) {
             return -1;
+        } else {
+            if (this.getDraw() < that.getDraw()) {
+                return -1;
+            } else if (this.getDraw() > that.getDraw()) {
+                return 1;
+            }
+        }
         }
         return 0;
     }
-    
-}
-class Sorting {
-    Ranking[] teams;
-    int size;
-    Sorting() {
-        size = 0;
-        teams = new Ranking[10];
     }
-    void add(Ranking objcricket) {
-        teams[size++] = objcricket;
-        if(size > 10) {
+    /**
+     * Class for sorting.
+     */
+    class Sorting {
+        /**
+         * { var_description }.
+         */
+    private final int twenty = 20;
+    /**
+     * { var_description }.
+     */
+    private Ranking[] team;
+    /**
+     * { int size }.
+     */
+    private int size;
+
+    /**
+     * Constructs the object.
+     * time complexity is 1.
+     */
+    Sorting() {
+
+        team = new Ranking[twenty];
+        size = 0;
+    }
+    //this method has constant time. 
+    //takes O(1) time complexity.
+    /**
+     * { method for adding }.
+     *
+     * @param      r     { parameter_description }
+     */
+    public void add(final Ranking r) {
+
+        team[size++] = r;
+        if (size > twenty) {
             resize();
         }
     }
+
+    /**
+     * { method for resizing the array}
+     * this method takes constant time.
+     * takes O(1) complexity.
+     */
     void resize() {
-        teams = Arrays.copyOf(teams, size * 2);
+
+        team = Arrays.copyOf(team, size * 2);
     }
-    void exchange(Ranking[] a, int i, int min) {
+    //takes O(1) time complexity.
+    /**this method has constant time complexity.
+     * { method for swapping }.
+     *
+     * @param      a     { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      min   The minimum
+     */
+    void exchange(final Ranking[] a, final int i, final int min) {
 
         Ranking temp = a[min];
         a[min] = a[i];
         a[i] = temp;
     }
-    String display() {
-        String s = "";
-        for(int i = 0; i < size; i++) {
-            s += teams[i].teamname + ",";
+    // this method has a complexity of n
+    //takes O(n^2) time complexity
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
 
+        String s = "";
+        for (int i = 0; i < size; i++) {
+            s += team[i].getName() + ",";
         }
         return s.substring(0, s.length() - 1);
     }
-
-    void SelectionSort() {
-        for(int i = 0; i < size-1; i++) {
-            int min = i; 
-            for(int j = i+1; j < size; j++) {
-                if(less(teams,j,min)) {
+    //this method has a complexity of n
+    //it takes O(n^2) time complexity.
+    /**
+     * {method for insertion sort }.
+     */
+    void selectionSort() {
+        for (int i = 0; i < size - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < size; j++) {
+                if (less(team, j, min)) {
                     min = j;
                 }
             }
-            exchange(teams,i,min);
-            
+            exchange(team, i, min);
         }
     }
-    boolean less(Ranking[] teams, int j, int min) {
-        return teams[j].compareTo(teams[min]) > 0;
+    // this method has constant time complexity.
+    // takes O(1) time complexity.
+    /**
+    * @param      teams  The teams
+    * @param      j      { parameter_description }
+    * @param      min    The minimum
+    *
+    * @return     { description_of_the_return_value }
+    */
+    boolean less(final Ranking[] teams, final int j, final int min) {
+
+        return team[j].compareTo(team[min]) > 0;
     }
 }
