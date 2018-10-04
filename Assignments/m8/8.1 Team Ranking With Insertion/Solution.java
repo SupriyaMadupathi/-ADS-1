@@ -83,19 +83,19 @@ class Ranking {
     public int compareTo(final Ranking that) {
 
         if (this.getWin() < that.getWin()) {
-            return -1;
-        } else if (this.getWin() > that.getWin()) {
             return 1;
+        } else if (this.getWin() > that.getWin()) {
+            return -1;
         } else {
         if (this.getLoss() < that.getLoss()) {
-            return 1;
-        } else if (this.getLoss() > that.getLoss()) {
             return -1;
+        } else if (this.getLoss() > that.getLoss()) {
+            return 1;
         } else {
             if (this.getDraw() < that.getDraw()) {
-                return -1;
-            } else if (this.getDraw() > that.getDraw()) {
                 return 1;
+            } else if (this.getDraw() > that.getDraw()) {
+                return -1;
             }
         }
         }
