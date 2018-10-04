@@ -127,7 +127,7 @@ class Ranking {
         team = new Ranking[twenty];
         size = 0;
     }
-    //this method has constant time. 
+    //this method has constant time.
     //takes O(1) time complexity.
     /**
      * { method for adding }.
@@ -210,3 +210,4 @@ class Ranking {
         return team[j].compareTo(team[min]) > 0;
     }
 }
+
