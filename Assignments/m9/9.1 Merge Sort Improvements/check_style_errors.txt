@@ -1,6 +1,5 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\-ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\-ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:2: First sentence should end with a period. [JavadocStyle]
+[ERROR] G:\-ADS-1\Assignments\m9\9.1 Merge Sort Improvements\Solution.java:12: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
