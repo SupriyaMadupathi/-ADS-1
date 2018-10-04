@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * { item_description }
+ * { item_description }.
  */
 final class Solution {
 
@@ -10,7 +10,7 @@ final class Solution {
     private Solution() {
      }
     /**
-     * { main method }
+     * { main method }.
      *
      * @param      args  The arguments
      */
