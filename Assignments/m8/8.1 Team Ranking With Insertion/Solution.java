@@ -123,7 +123,7 @@ class Ranking {
      * Constructs the object.
      * this method has constant time complexity.
      * time complexity is O(1).
-     * 
+     *
      */
     Sorting() {
 
@@ -196,7 +196,7 @@ class Ranking {
                 } else {
                     exchange(team, j - 1, j);
                 }
-                } 
+                }
             }
         }
     // this method has constant time complexity.
