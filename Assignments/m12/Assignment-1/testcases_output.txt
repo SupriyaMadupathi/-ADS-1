@@ -63,7 +63,7 @@ Your Output:
 [Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -146,7 +146,7 @@ Your Output:
 [Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -184,7 +184,7 @@ Your Output:
 [tanvi90, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -225,7 +225,7 @@ Your Output:
 [tanvi90, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -313,7 +313,7 @@ Your Output:
 [Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -403,5 +403,5 @@ Your Output:
 [Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
 	at Leaderboard.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Solution.main(Solution.java:132)
 ----------------------------------------

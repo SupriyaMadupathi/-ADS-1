@@ -87,30 +87,46 @@ class Leaderboard {
         String s = "";
         System.out.println(Arrays.toString(array));
         s += array[1].toString();
+       /* for (int i = 0; i < size; i++) {
+            s += array[i].toString() + ","+array[i+1].toString() + ",";
+        }*/
         return s.substring(0, s.length());
     }
 }
-
+/**.
+ *Class for Solution.
+ */
 public final class Solution {
+    /**.
+     * Magic Number.
+     */
     private static final int TEN = 10;
-    
+    /**.
+     * Magic Number.
+     */
     private static final int THREE = 3;
-    
+    /**.
+     * Constructs the object.
+     */
     private Solution() {
     }
 
-    
+    /**.
+     *Main function to handle test cases and deliver required output.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Student[] student = new Student[25];
         int size = 0;
         Scanner sc = new Scanner(System.in);
         Leaderboard t = new Leaderboard();
         while (sc.hasNext()) {
-            String[] details = sc.nextLine().split(",");
-            System.out.println(Arrays.toString(details));
-            if (details.length > 1) {
-                student[size] = new Student(details[0], details[1],
-                     Integer.parseInt(details[2]), Integer.parseInt(details[THREE]), Integer.parseInt(details[4]),Integer.parseInt(details[5]), details[6]);
+            String[] line = sc.nextLine().split(",");
+            System.out.println(Arrays.toString(line));
+            if (line.length > 1) {
+                student[size] = new Student(line[0], line[1],
+                     Integer.parseInt(line[2]), Integer.parseInt(line[THREE]), Integer.parseInt(line[4]),Integer.parseInt(line[5]), line[6]);
         }
         }
         System.out.println(t.show(student, size ));
