@@ -53,9 +53,7 @@ class Student implements Comparable<Student> {
     }
 }
 class Sorting {
-    /**.
-     * Constructs the object.
-     */
+    
     public Sorting() {
 
     }
@@ -85,7 +83,7 @@ class Sorting {
     public String show(Comparable[] array, int size) {
         selectionSort(array, size);
         String s = "";
-        System.out.println(Arrays.toString(array));
+       /* System.out.println(Arrays.toString(array));*/
         s += array[1].toString();
        /* for (int i = 0; i < size; i++) {
             s += array[i].toString() + ","+array[i+1].toString() + ",";

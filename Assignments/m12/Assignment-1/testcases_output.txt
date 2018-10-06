@@ -31,10 +31,9 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -78,10 +77,9 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -100,10 +98,9 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-[tanvi90, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -125,10 +122,9 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-[tanvi90, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -177,10 +173,9 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-[Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -231,8 +226,7 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-[Ira93, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 Exception in thread "main" java.lang.NullPointerException
-	at Sorting.show(Solution.java:89)
-	at Solution.main(Solution.java:116)
+	at Sorting.show(Solution.java:87)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
