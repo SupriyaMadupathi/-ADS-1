@@ -52,11 +52,11 @@ class Student implements Comparable<Student> {
         return 0;
     }
 }
-class Leaderboard {
+class Sorting {
     /**.
      * Constructs the object.
      */
-    public Leaderboard() {
+    public Sorting() {
 
     }
  
@@ -97,36 +97,20 @@ class Leaderboard {
  *Class for Solution.
  */
 public final class Solution {
-    /**.
-     * Magic Number.
-     */
-    private static final int TEN = 10;
-    /**.
-     * Magic Number.
-     */
-    private static final int THREE = 3;
-    /**.
-     * Constructs the object.
-     */
+     
     private Solution() {
     }
-
-    /**.
-     *Main function to handle test cases and deliver required output.
-     *
-     * @param      args  The arguments
-     */
     public static void main(final String[] args) {
         Student[] student = new Student[25];
         int size = 0;
         Scanner sc = new Scanner(System.in);
-        Leaderboard t = new Leaderboard();
+        Sorting t = new Sorting();
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
-            System.out.println(Arrays.toString(line));
+           /* System.out.println(Arrays.toString(line));*/
             if (line.length > 1) {
                 student[size] = new Student(line[0], line[1],
-                     Integer.parseInt(line[2]), Integer.parseInt(line[THREE]), Integer.parseInt(line[4]),Integer.parseInt(line[5]), line[6]);
+                     Integer.parseInt(line[2]), Integer.parseInt(line[3]), Integer.parseInt(line[4]),Integer.parseInt(line[5]), line[6]);
         }
         }
         System.out.println(t.show(student, size ));
