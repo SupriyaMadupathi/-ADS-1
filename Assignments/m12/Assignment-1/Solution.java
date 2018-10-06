@@ -81,16 +81,14 @@ class Sorting {
     }
  
     public String show(Comparable[] array, int size) {
+        selectionSort(array, size);
         String s = "";
-        for (int i = 0; i < size; i++) {
-            s += array[i].toString() + ",";
-        }
-        return s.substring(0, s.length() - 1);
+        s += array[1].toString();
+       
+        return s.substring(0, s.length());
     }
 }
-/**.
- *Class for Solution.
- */
+
 public final class Solution {
      
     private Solution() {
