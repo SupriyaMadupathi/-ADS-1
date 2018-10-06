@@ -81,14 +81,11 @@ class Sorting {
     }
  
     public String show(Comparable[] array, int size) {
-        selectionSort(array, size);
         String s = "";
-       /* System.out.println(Arrays.toString(array));*/
-        s += array[1].toString();
-       /* for (int i = 0; i < size; i++) {
-            s += array[i].toString() + ","+array[i+1].toString() + ",";
-        }*/
-        return s.substring(0, s.length());
+        for (int i = 0; i < size; i++) {
+            s += array[i].toString() + ",";
+        }
+        return s.substring(0, s.length() - 1);
     }
 }
 /**.
