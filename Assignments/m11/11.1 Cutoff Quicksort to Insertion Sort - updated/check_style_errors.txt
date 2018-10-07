@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
