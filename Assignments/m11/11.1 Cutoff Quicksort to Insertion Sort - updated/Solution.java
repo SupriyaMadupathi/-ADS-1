@@ -148,8 +148,8 @@ class Sorting {
         return a.compareTo(b) < 0;
     }
 }
-/**
- * { main method }
+/**.
+ * { main method }.
  */
 public final class Solution {
 
@@ -184,4 +184,3 @@ public final class Solution {
         }
     }
 }
-
