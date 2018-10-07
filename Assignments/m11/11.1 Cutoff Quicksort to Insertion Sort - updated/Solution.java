@@ -1,7 +1,4 @@
 import java.util.Scanner;
-/**.
- * { item_description }
- */
 /**
  * Class for sorting.
  */
@@ -151,8 +148,11 @@ class Sorting {
         return a.compareTo(b) < 0;
     }
 }
-
+/**
+ * { main method }
+ */
 public final class Solution {
+
     /**.
      * Constructs the object.
      */
