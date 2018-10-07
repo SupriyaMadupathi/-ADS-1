@@ -13,6 +13,8 @@ class LinkedList {
         head = null;
         size =0;
     }
+    // time complexity for this method is n
+    //takes O(n) time complexity
     void insertAt(int pos, String val)throws Exception{
         if (pos<0 || pos>size) {
         throw new Exception();          
@@ -26,6 +28,8 @@ class LinkedList {
         }*/
         head=insertAt(pos,head,obj,0);
     }
+    // time complexity for this method is n
+    //takes O(n) time complexity
     Node insertAt(int pos, Node first, Node obj, int count) throws Exception{
         if (pos == count) {
             obj.next =first;
@@ -35,9 +39,13 @@ class LinkedList {
         first.next = insertAt(pos,first.next,obj,count+1);
         return first;
     }
+    // time complexity for this method is n
+    //takes O(n) time complexity
     void reverse(){
         reverse(null,head);
     }
+    // time complexity for this method is n
+    //takes O(n) time complexity
     void reverse(Node previous, Node current){
         if (current!=null) {
             reverse(current,current.next);
@@ -46,6 +54,8 @@ class LinkedList {
             head =previous;
         }
     }
+    // time complexity for this method is constant
+    //takes O(1) time complexity
     void display(){
         Node temp = head;
         String str = "";
