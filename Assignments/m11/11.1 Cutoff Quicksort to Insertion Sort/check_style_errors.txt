@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] G:\-ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] G:\-ADS-1\Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:157: Missing a Javadoc comment. [JavadocType]
+Audit done.
+Checkstyle ends with 2 errors.
