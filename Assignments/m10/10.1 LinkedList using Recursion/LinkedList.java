@@ -54,8 +54,8 @@ class LinkedList {
             head =previous;
         }
     }
-    // time complexity for this method is constant
-    //takes O(1) time complexity
+    // time complexity for this method is n
+    //takes O(n) time complexity
     void display(){
         Node temp = head;
         String str = "";
