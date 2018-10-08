@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.

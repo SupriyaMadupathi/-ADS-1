@@ -35,7 +35,7 @@ class MinHeap<E extends Comparable<E>> {
         return true;
     }
     //this method takes constant time complexity
-    // time complexity is O(1) 
+    // time complexity is O(1)
     /**
      * { function_description }.
      *
