@@ -446,11 +446,11 @@ final class Heap {
             l = j;
         }
     }
-//this method has constant time complexity 
+//this method has constant time complexity
     //Time complexity is 1.
     /**
      * to compare the values.
-     * 
+     *
      *
      * @param      pq    { parameter_description }
      * @param      i     { parameter_description }

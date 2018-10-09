@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m14\14.2 student reservation system\Solution.java:449: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m14\14.2 student reservation system\Solution.java:453: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
