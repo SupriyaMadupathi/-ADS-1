@@ -332,7 +332,11 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
         }
         return true;
     }
-    
+    /**
+     * { check that rank }.
+     *
+     * @return     { boolean is returned }.
+     */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {
             if (i != rank(select(i))) {
@@ -346,7 +350,11 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
         }
         return true;
     }
-    
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         int i = 0;
@@ -358,12 +366,21 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
 }
 
-
+/**
+ * Class for solution.
+ */
 public final class Solution {
-    
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
+    /**
+     * { Client program }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchSymbolTable<String, Integer> bs = new

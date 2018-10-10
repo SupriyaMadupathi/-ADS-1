@@ -1,11 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:335: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:336:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:349: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:350:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:362: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:363: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:364:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:367:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 8 errors.
