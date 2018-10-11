@@ -43,6 +43,8 @@ class BinarySt<Key extends Comparable<Key>, Value> {
 	void put(Book key, int val) {
 		root = put(root, key, val);
 	}
+	//this method has the complexity of n log n.
+	//the complexity is O(n log n)
 	Node put(Node x, Book key, int val) {
 		if (x == null) {
 			return new Node(key, val);
@@ -59,6 +61,8 @@ class BinarySt<Key extends Comparable<Key>, Value> {
 		}
 		return x;
 	}
+	//this method has the complexity of n log n.
+	//the complexity is O(n log n)
 	Integer get(Book key) {
 		Node x = root;
 		while (x != null) {
