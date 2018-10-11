@@ -1,9 +1,21 @@
 import java.util.Scanner;
+/**
+ * { Class for solution }.
+ */
 final class Solution {
+	/**
+	 * Constructs the object.
+	 */
     protected Solution() {
 
     }
+    /**
+     * { main function}
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         Scanner sc = new Scanner(System.in);
         BinarySt bt = new BinarySt();
         while (sc.hasNext()) {
