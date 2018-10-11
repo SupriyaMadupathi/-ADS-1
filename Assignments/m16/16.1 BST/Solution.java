@@ -3,14 +3,14 @@ import java.util.Scanner;
  * { Class for solution }.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
+    /**
+     * Constructs the object.
+     */
     protected Solution() {
 
     }
     /**
-     * { main function}
+     * { main function}.
      *
      * @param      args  The arguments
      */
