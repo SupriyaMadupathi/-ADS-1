@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] G:\-ADS-1\Assignments\m16\16.1 BST\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] G:\-ADS-1\Assignments\m16\16.1 BST\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\-ADS-1\Assignments\m16\16.1 BST\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 3 errors.
