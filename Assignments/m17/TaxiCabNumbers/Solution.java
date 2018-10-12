@@ -1,24 +1,5 @@
 import java.util.*;
-class Taxicab implements Comparable<Taxicab> {
-	int i,j;
-	long sum;
-	public Taxicab(int i, int j) {
-        this.sum = (long) i*i*i + (long) j*j*j;
-        this.i = i;
-        this.j = j;
-    }
-    public int compareTo(Taxicab that) {
-        if      (this.sum < that.sum) return -1;
-        else if (this.sum > that.sum) return +1;
-        // else if (this.i < that.i)     return -1;
-        // else if (this.i > that.i)     return +1;
-        else                          return  0;
-    }
-    public String toString() {
-        return i + "^3 + " + j + "^3";
-    }
 
-}
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -32,24 +13,24 @@ class Solution {
 	            pq.insert(new Taxicab(i, i));
         	}
         int pair = 1;
-        Taxicab prev = new Taxicab(0, 0);
-        int pairCount = 0;
+        Taxicab previous = new Taxicab(0, 0);
+        int match = 0;
         while (!pq.isEmpty()) {
             Taxicab curr = pq.delMin();
-            if (prev.sum == curr.sum) {
+            if (previous.sum == curr.sum) {
                 pair++;
                 if (pair == M){
-                	pairCount = pairCount+1;
+                	match = match+1;
                 }
-                if(pairCount == N){
-	            	System.out.println(prev.sum);
+                if(match == N){
+	            	System.out.println(previous.sum);
 	            	break;
             	}
             }
             else {
                 pair = 1;
             }
-            prev = curr;
+            previous = curr;
             if (curr.j < n) pq.insert(new Taxicab(curr.i, curr.j + 1));
         }
     }
