@@ -1,6 +1,12 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
     }
     public static void main(String[] args) {
@@ -9,8 +15,7 @@ class Solution {
     	MinPQ<Stock> min = new MinPQ<Stock>();
     	int n = Integer.parseInt(sc.nextLine());
     	for (int i = 0; i < 6 * n; i++) {
-    		String lines = sc.nextLine();
-    		String[] token= lines.split(",");
+    		String[] token = sc.nextLine().split(",");
     		Stock s = new Stock(token[0],Float.parseFloat(token[1]));
     		max.insert(s);
         }
