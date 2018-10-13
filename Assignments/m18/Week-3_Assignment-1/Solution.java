@@ -15,5 +15,6 @@ class Solution {
     		max.insert(s);
         }
         int a = Integer.parseInt(sc.nextLine());
+        System.out.println(max);
     }
 }
