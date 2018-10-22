@@ -1,57 +1,116 @@
 import java.util.Scanner;
+/**
+ * Class for book details.
+ */
 class BookDetails implements Comparable {
-    
+    /**
+     * variable declaration.
+     */
     private String name;
-    
+    /**
+     * variable declaration.
+     */
     private String author;
-    
+    /**
+     * variable declaration.
+     */
     private float price;
-    
+    /**
+     * Constructs the object.
+     *
+     * @param      bookname    The bookname
+     * @param      bookauthor  The bookauthor
+     * @param      bookprice   The bookprice
+     */
     BookDetails(final String bookname,
                 final String bookauthor, final float bookprice) {
         this.name = bookname;
         this.author = bookauthor;
         this.price = bookprice;
     }
-    
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return this.name;
     }
-    
+    /**
+     * Gets the author.
+     *
+     * @return     The author.
+     */
     public String getAuthor() {
         return this.author;
     }
-    
+    /**
+     * Gets the price.
+     *
+     * @return     The price.
+     */
     public float getPrice() {
         return this.price;
     }
-    
+    /**
+     * compare to method that returns integer.
+     *
+     * @param      object  The object
+     *
+     * @return  integer.
+     */
     public int compareTo(final Object object) {
         BookDetails that = (BookDetails) object;
         return this.name.compareTo(that.name);
     }
-    
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return getName() + ", " + getAuthor() + ", " + getPrice();
     }
 }
-
+/**
+ * Class for binary search tree.
+ */
 class BinarySearchTree {
-    
+    /**
+     * variable declaration.
+     */
     private Node root;
-    
+    /**
+     * Class for node.
+     */
     private final class Node {
-        
+        /**
+         * variable declaration.
+         */
         private BookDetails key;
-        
+        /**
+         * variable declaration.
+         */
         private int val;
-        
+        /**
+         * variable declaration.
+         */
         private Node left;
-        
+        /**
+         * variable declaration.
+         */
         private Node right;
-        
+        /**
+         * variable declaration.
+         */
         private int size;
-        
+        /**
+         * Constructs the object.
+         *
+         * @param      key1   The key
+         * @param      val1  The value
+         * @param s int size
+         */
         private Node(final BookDetails key1, final int val1, final int s) {
             this.key = key1;
             this.val = val1;
@@ -60,15 +119,27 @@ class BinarySearchTree {
             right = null;
         }
     }
-    
+    /**
+     * Constructs the object.
+     */
     BinarySearchTree() {
         root = null;
     }
-    
+    /**
+     * size method.
+     *
+     * @return size.
+     */
     public int size() {
         return size(root);
     }
-    
+    /**
+     * size overloaded method.
+     *
+     * @param      x Node
+     *
+     * @return size.
+     */
     private int size(final Node x) {
         if (x == null) {
             return 0;
@@ -76,7 +147,13 @@ class BinarySearchTree {
             return x.size;
         }
     }
-    
+    /**
+     * get method.
+     *time complexity is O(logN)
+     * @param      key   The key
+     *
+     * @return  integer.
+     */
     public int get(final BookDetails key) {
         Node x = root;
         while (x != null) {
@@ -91,7 +168,12 @@ class BinarySearchTree {
         }
         return -1;
     }
-   
+    /**
+     * put method to insert the key, value.
+     *time complexity is O(1)
+     * @param      key   The key
+     * @param      val   The value
+     */
     public void put(final BookDetails key, final int val) {
         root = put(root, key, val);
     }
@@ -118,11 +200,21 @@ class BinarySearchTree {
         }
         return x;
     }
-    
+    /**
+     * min element.
+     * time complexity is O(1)
+     * @return minimum.
+     */
     public BookDetails min() {
         return min(root).key;
     }
-    
+    /**
+     * overloaded constructor.
+     * time complexity is O(logN)
+     * @param      x Node
+     *
+     * @return minimum.
+     */
     private Node min(final Node x) {
         if (x.left == null) {
             return x;
@@ -130,11 +222,21 @@ class BinarySearchTree {
             return min(x.left);
         }
     }
-    
+    /**
+     * maximum element.
+     * time complexity is O(1)
+     * @return maximum.
+     */
     public BookDetails max() {
         return max(root).key;
     }
-    
+    /**
+     * overloaded constructor.
+     * time complexity is O(logN)
+     * @param      x Node
+     *
+     * @return maximum.
+     */
     private Node max(final Node x) {
         if (x.right == null) {
             return x;
@@ -142,7 +244,13 @@ class BinarySearchTree {
             return max(x.right);
         }
     }
-    
+    /**
+     * floor method.
+     * time complexity is O(1)
+     * @param      key   The key
+     *
+     * @return  key
+     */
     public BookDetails floor(final BookDetails key) {
         Node x = floor(root, key);
         if (x == null) {
@@ -151,7 +259,15 @@ class BinarySearchTree {
             return x.key;
         }
     }
-    
+    /**
+     *
+     *overloaded constructor.
+     *time complexity is O(logN)
+     * @param      x Node
+     * @param      key   The key
+     *
+     * @return floor.
+     */
     private Node floor(final Node x, final BookDetails key) {
         if (x == null) {
             return null;
@@ -170,7 +286,13 @@ class BinarySearchTree {
             return x;
         }
     }
-    
+    /**
+     * ceiling method.
+     * time complexity is O(1)
+     * @param      key   The key
+     *
+     * @return key.
+     */
     public BookDetails ceiling(final BookDetails key) {
         Node x = ceiling(root, key);
         if (x == null) {
@@ -179,7 +301,14 @@ class BinarySearchTree {
             return x.key;
         }
     }
-    
+    /**
+     * overloaded constructor.
+     * time complexity is O(logN)
+     * @param      x Node
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node ceiling(final Node x, final BookDetails key) {
         if (x == null) {
             return null;
@@ -198,12 +327,25 @@ class BinarySearchTree {
         }
         return ceiling(x.right, key);
     }
-    
+    /**
+     * {Select Method}.
+     * Time complexity of this method is O(1).
+     * @param      k     {Integer}
+     *
+     * @return     {BookDetails Object}
+     */
     public BookDetails select(final int k) {
         Node x = select(root, k);
         return x.key;
     }
-    
+    /**
+     * {Select method}
+     * Time complexity of this method is O(log(N)).
+     * @param      x     {Node}
+     * @param      k     {Integer}
+     *
+     * @return     {Node}
+     */
     private Node select(final Node x, final int k) {
         if (x == null) {
             return null;
@@ -211,17 +353,30 @@ class BinarySearchTree {
         int t = size(x.left);
         if (t > k) {
             return select(x.left,  k);
-        } else if (t > k) {
+        } else if (t < k) {
             return select(x.right, k - t - 1);
         } else {
             return x;
         }
     }
-    
+    /**
+     * {Rank}.
+     * Time complexity of this method is O(1).
+     * @param      key   The key
+     *
+     * @return     {Integer}
+     */
     public int rank(final BookDetails key) {
         return rank(key, root);
     }
-    
+    /**
+     * {Method of rank}.
+     * Time complexity of this method is O(log(N)).
+     * @param      key   The key
+     * @param      x     {Node}
+     *
+     * @return     {Integer}
+     */
     private int rank(final BookDetails key, final Node x) {
         if (x == null) {
             return 0;
@@ -236,13 +391,21 @@ class BinarySearchTree {
         }
     }
 }
-
+/**
+ * client program.
+ */
 public final class Solution {
-    
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-        
+        //unused constructor.
     }
-    
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchTree bstobj = new BinarySearchTree();
