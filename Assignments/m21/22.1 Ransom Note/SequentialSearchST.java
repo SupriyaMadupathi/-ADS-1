@@ -1,4 +1,3 @@
-
 public class SequentialSearchST<Key, Value> {
     private int n;           
     private Node first;      
@@ -10,8 +9,6 @@ public class SequentialSearchST<Key, Value> {
         public Node(Key key, Value val, Node next)  {
             this.key  = key;
             this.val  = val;
-
-            
             this.next = next;
         }
     }
@@ -50,10 +47,21 @@ public class SequentialSearchST<Key, Value> {
         first = new Node(key, val, first);
         n++;
     }
+
+    /**
+     * Removes the specified key and its associated value from this symbol table     
+     * (if the key is in this symbol table).    
+     *
+     * @param  key the key
+     * @throws IllegalArgumentException if {@code key} is {@code null}
+     */
     public void delete(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to delete() is null"); 
         first = delete(first, key);
     }
+
+    // delete key in linked list beginning at Node x
+    // warning: function call stack too large if table is large
     private Node delete(Node x, Key key) {
         if (x == null) return null;
         if (key.equals(x.key)) {
@@ -63,4 +71,5 @@ public class SequentialSearchST<Key, Value> {
         x.next = delete(x.next, key);
         return x;
     }
+
     }
