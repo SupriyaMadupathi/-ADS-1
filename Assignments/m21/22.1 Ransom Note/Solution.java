@@ -1,151 +1,45 @@
-import java.util.*;
-class SeparateChainingHashST {
-    private static final int INIT_CAPACITY = 4;
-    int n;                                // number of key-value pairs
-    int m;                                // hash table size
-    SequentialSearchST<String, Integer>[] st;  // array of linked-list symbol tables
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+public final class Solution {
     /**
-     * Initializes an empty symbol table.
+     * client class.
      */
-    public SeparateChainingHashST() {
-        this(INIT_CAPACITY);
-    } 
-
-    /**
-     * Initializes an empty symbol table with {@code m} chains.
-     * @param m the initial number of chains
-     */
-    public SeparateChainingHashST(int m) {
-        this.m = m;
-        st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
-            st[i] = new SequentialSearchST<String, Integer>();
-    } 
-
-    
-
-    // hash value between 0 and m-1
-    private int hash(String key) {
-        return (key.hashCode() & 0x7fffffff) % m;
-    } 
-
-    /**
-     * Returns the number of key-value pairs in this symbol table.
-     *
-     * @return the number of key-value pairs in this symbol table
-     */
-    public int size() {
-        return n;
-    } 
-
-    /**
-     * Returns true if this symbol table is empty.
-     *
-     * @return {@code true} if this symbol table is empty;
-     *         {@code false} otherwise
-     */
-    public boolean isEmpty() {
-        return size() == 0;
+    private Solution() {
     }
-
     /**
-     * Returns true if this symbol table contains the specified key.
+     * main function.
      *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key};
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      args  The arguments
      */
-    public boolean contains(String key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
-        return get(key) != null;
-    } 
-
-    /**
-     * Returns the value associated with the specified key in this symbol table.
-     *
-     * @param  key the key
-     * @return the value associated with {@code key} in the symbol table;
-     *         {@code null} if no such value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Integer get(String key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
-        int i = hash(key);
-        return st[i].get(key);
-    } 
-
-    
-
-    public void put(String key, Integer val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
-        if (val == null) {
-            delete(key);
-            return;
-        }
-
-        int i = hash(key);
-        if (!st[i].contains(key)) n++;
-        st[i].put(key, val);
-    } 
-
-    /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
-     *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public void delete(String key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-
-        int i = hash(key);
-        if (st[i].contains(key)) n--;
-        st[i].delete(key);
-    } 
-    
-}
-class Solution {
-    Solution() {
-
-    }
-
-    public static String check(SeparateChainingHashST st, int n, String[] data) {
-        int count = 0;
-        for (int i = 0; i < n; i++) {
-            Integer p = st.get(data[i]);
-            
-            
-            if (p == null || p == 0) {
-                return "No";
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        SeparateChainingHashST<String, Integer> hash =
+        new SeparateChainingHashST<String, Integer>();
+        String integer = scan.nextLine();
+        String[] arr = scan.nextLine().split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            if (hash.contains(arr[i])) {
+                hash.put(arr[i], hash.get(arr[i]) + 1);
+            } else {
+                hash.put(arr[i], 1);
             }
-            st.put(data[i], --p);
         }
-        return "Yes";
-    } 
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        SeparateChainingHashST st = new SeparateChainingHashST();
-        String num = sc.nextLine();
-        String[] no = num.split(" ");
-        int m = Integer.parseInt(no[0]);
-        int n = Integer.parseInt(no[1]);
-        while (sc.hasNextLine()) {
-            String magazine = sc.nextLine();
-            String[] magdata = magazine.split(" ");
-            st = new SeparateChainingHashST(magdata.length);
-            for (int i = 0; i < m; i++) {
-                if (st.contains(magdata[i])) {
-                    int val = st.get(magdata[i]);
-                    st.put(magdata[i], ++val);
+        String[] search = scan.nextLine().split(" ");
+        for (int i = 0; i < search.length; i++) {
+            if (hash.contains(search[i])) {
+                if (hash.get(search[i]) == 0) {
+                    System.out.print("No");
+                    return;
                 } else {
-                    st.put(magdata[i], 1);
+                    hash.put(search[i], hash.get(search[i]) - 1);
                 }
+            } else {
+                System.out.print("No");
+                return;
             }
-            String note = sc.nextLine();
-            String[] notedata = note.split(" ");
-            System.out.println(check(st, n, notedata));
         }
+        System.out.println("Yes");
     }
 }
