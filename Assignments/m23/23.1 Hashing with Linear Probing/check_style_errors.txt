@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] G:\-ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\-ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
