@@ -96,6 +96,7 @@ final class Solution {
             String[] query = stu.split(" ");
             if (!l1.contains(query[1])) {
                 System.out.println("Student doesn't exists...");
+                break;
             }
             switch (query[2]) {
                 case "1":
