@@ -81,10 +81,13 @@ John
 Hank
 13.3
 Jeannette Caines
+Student doesn't exists
 null
+Student doesn't exists
 null
+Student doesn't exists
 null
-Student doesn't exists...
+Student doesn't exists
 null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -921,7 +924,7 @@ Annie Maccoby
 David Macfarlane
 10.42
 88.39
-Student doesn't exists...
+Student doesn't exists
 null
 8.759
 40.1
@@ -963,6 +966,7 @@ Korey Jackson
 Betty Halbreich
 35.6
 Dana C. Jack
+Student doesn't exists
 null
 Elaine Hall
 Bonnie MacBird
@@ -1043,6 +1047,7 @@ Chuck Hagel
 John W. Jacobs
 David Hagedorn
 Todd Haberkorn
+Student doesn't exists
 null
 Mary Curran Hackett
 Catherine Macaulay

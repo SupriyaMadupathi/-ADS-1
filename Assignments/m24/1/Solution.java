@@ -94,11 +94,11 @@ final class Solution {
         for (int i = 0; i < m; i++) {
             String stu = sc.nextLine();
             String[] query = stu.split(" ");
+            if (!l1.contains(query[1])) {
+                System.out.println("Student doesn't exists");
+            }
             switch (query[2]) {
                 case "1":
-                if (!l1.contains(query[1])) {
-                System.out.println("Student doesn't exists...");
-            }
                     System.out.println(l1.get(query[1]));
                 break;
                 case "2":
