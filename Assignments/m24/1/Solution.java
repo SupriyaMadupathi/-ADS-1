@@ -31,13 +31,12 @@ class Student {
      * @param      name1         The name 1
      * @param      marks1        The marks 1
      */
-    Student(final String roll_number1, final String name1, final double marks1) {
+    Student(final String roll_Number1, final String name1, final double marks1) {
 
-        roll_number = roll_number1;
+        roll_number = roll_Number1;
         name = name1;
         marks = marks1;
     }
-    
     /**
      * Gets the name.
      *
@@ -47,14 +46,13 @@ class Student {
         return name;
     }
     /**
-     * { gets roll_number}
+     * { gets roll_number}.
      *
      * @return     {roll number }
      */
     public String gerRollnumber() {
         return roll_number;
     }
-    
     /**
      * Gets the total.
      *
@@ -65,19 +63,17 @@ class Student {
     }
 }
 /**
- * { Solution}
+ * { Solution}.
  */
-final class Solution {
-    
+final class Solution {  
     /**
      * Constructs the object.
      */
     private Solution() {
 
     }
-    
     /**
-     * { main method }
+     * { main method }.
      *
      * @param      args  The arguments
      */
