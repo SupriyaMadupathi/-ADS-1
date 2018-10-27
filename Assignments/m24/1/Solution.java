@@ -1,42 +1,88 @@
 import java.util.Scanner;
 
+/**
+ * Class for student.
+ */
 class Student {
-    
+    /**
+     * { for roll number }
+     */
     private String roll_number;
-    
+    /**
+     * { for name }
+     */
     private String name;
-    
+    /**
+     * {marks }
+     */
     private double marks;
     
+    /**
+     * Constructs the object.
+     */
     Student() {
+
     }
     
+    /**
+     * Constructs the object.
+     *
+     * @param      roll_number1  The roll number 1
+     * @param      name1         The name 1
+     * @param      marks1        The marks 1
+     */
     Student(final String roll_number1, final String name1, final double marks1) {
+
         roll_number = roll_number1;
         name = name1;
         marks = marks1;
     }
     
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return name;
     }
-    
+    /**
+     * { gets roll_number}
+     *
+     * @return     {roll number }
+     */
     public String gerRollnumber() {
         return roll_number;
     }
     
+    /**
+     * Gets the total.
+     *
+     * @return     The total.
+     */
     public Double getTotal() {
         return marks;
     }
 }
-
+/**
+ * { Solution}
+ */
 final class Solution {
     
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
     
+    /**
+     * { main method }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
+
         Scanner sc = new Scanner(System.in);
         Student details = new Student();
         LinearProbingHashST<String, String> l1 = new LinearProbingHashST();
@@ -54,12 +100,9 @@ final class Solution {
         for (int i = 0; i < m; i++) {
             String stu = sc.nextLine();
             String[] query = stu.split(" ");
-            
             switch (query[2]) {
                 case "1":
                     System.out.println(l1.get(query[1]));
-
-                
                 break;
                 case "2":
                 System.out.println(l2.get(query[1]));
