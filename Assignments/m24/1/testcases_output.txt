@@ -84,6 +84,7 @@ Jeannette Caines
 null
 null
 null
+Student doesn't exists...
 null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -920,6 +921,7 @@ Annie Maccoby
 David Macfarlane
 10.42
 88.39
+Student doesn't exists...
 null
 8.759
 40.1
