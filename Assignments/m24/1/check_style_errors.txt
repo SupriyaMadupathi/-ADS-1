@@ -1,15 +1,4 @@
 Starting audit...
 [ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:10:20: Name 'roll_number' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:11: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:15: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:30:8: Unused @param tag for 'roll_number1'. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:34: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:34:26: Expected @param tag for 'roll_Number1'. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:34:26: Name 'roll_Number1' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] G:\-ADS-1\Assignments\m24\1\Solution.java:68: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 1 errors.

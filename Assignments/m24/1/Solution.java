@@ -5,35 +5,33 @@ import java.util.Scanner;
  */
 class Student {
     /**
-     * { for roll number }
+     * { for roll number }.
      */
-    private String roll_number;
+    private String rollnumber;
     /**
-     * { for name }
+     * { for name }.
      */
     private String name;
     /**
-     * {marks }
+     * {marks }.
      */
     private double marks;
-    
     /**
      * Constructs the object.
      */
     Student() {
 
     }
-    
     /**
      * Constructs the object.
      *
-     * @param      roll_number1  The roll number 1
+     * @param      rollnumber1  The roll number 1
      * @param      name1         The name 1
      * @param      marks1        The marks 1
      */
-    Student(final String roll_Number1, final String name1, final double marks1) {
+    Student(final String rollnumber1, final String name1, final double marks1) {
 
-        roll_number = roll_Number1;
+        rollnumber = rollnumber1;
         name = name1;
         marks = marks1;
     }
@@ -51,7 +49,7 @@ class Student {
      * @return     {roll number }
      */
     public String gerRollnumber() {
-        return roll_number;
+        return rollnumber;
     }
     /**
      * Gets the total.
@@ -65,7 +63,7 @@ class Student {
 /**
  * { Solution}.
  */
-final class Solution {  
+final class Solution {
     /**
      * Constructs the object.
      */
