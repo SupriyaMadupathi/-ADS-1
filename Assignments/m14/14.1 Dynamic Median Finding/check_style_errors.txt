@@ -1,2 +1,4 @@
 Starting audit...
+[ERROR] G:\-ADS-1\Assignments\m14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.

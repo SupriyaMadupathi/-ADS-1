@@ -2,20 +2,20 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public final class Solution {
-
+public class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {
+
+    protected Solution() {
 
     }
-
     /**
-     * { main function }.
+     * main function.
      *
-     * @param      args  The arguments
+     * @param      args  The arguments.
      */
+
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
@@ -38,6 +38,7 @@ public final class Solution {
             }
             if (maxpq.size() - minpq.size() > 1) {
                 minpq.insert(maxpq.delMax());
+
             }
 
             if (minpq.size() == maxpq.size()) {
