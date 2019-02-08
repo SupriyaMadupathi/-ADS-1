@@ -28,7 +28,7 @@ public int compareTo(final Student that) {
 
         if (this.getName() == that.getName()) {
             return 1;
-        } else if (this.getName() == that.getName()) {
+        } else if (this.getName() != that.getName()) {
             return -1;
         } else {
         if (this.getRollno() == that.getRollno()) {
