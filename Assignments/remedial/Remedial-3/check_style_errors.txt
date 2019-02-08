@@ -42,7 +42,7 @@ Starting audit...
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:103:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:103:34: 'marks' hides a field. [HiddenField]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:15: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:22: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:109:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:26: Parameter args should be final. [FinalParameters]

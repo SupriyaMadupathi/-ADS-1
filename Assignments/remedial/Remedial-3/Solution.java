@@ -105,7 +105,7 @@ class Student implements Comparable<Student> {
         return marks[j].compareTo(marks[min]) > 0;
     }
 }
-class Solution{
+public class Solution{
 	Solution() {
 
 	}
