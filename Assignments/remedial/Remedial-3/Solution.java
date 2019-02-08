@@ -10,16 +10,18 @@ public final class Solution {
         for (int i = 0; i< m; i++) {
         	String stu = sc.nextLine();
         	String[] data = stu.split(",");
-        	System.out.println(data);
+        	// System.out.println(data);
         	String key = new String(data[1]);
         	double value = Double.parseDouble(data[2]);
         	bst.put(key, value);
         }
-        // int n = Integer.parseInt(sc.nextLine());
-        // for(int i = 0; i< n; i++){
-        // 	String stu = sc.nextLine();
+        int n = Integer.parseInt(sc.nextLine());
+        for(int i = 0; i< n; i++){
+        	String stu = sc.nextLine();
+        	System.out.println(stu);
 
-        // }
+
+        }
     }
 }
 

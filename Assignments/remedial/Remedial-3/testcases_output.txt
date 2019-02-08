@@ -5,13 +5,10 @@ Expected Output:
 1003,Raju,93.0
 1004,Shreya,94.0
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
+91
+92
+93
+94
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -22,29 +19,15 @@ Expected Output:
 1008,Raju,91.0
 1009,Syed,91.0
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
-[Ljava.lang.String;@19dfb72a
-[Ljava.lang.String;@17c68925
+92
+97
+91
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 This marks are not awarded to any student
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
+99.0
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -57,14 +40,8 @@ Expected Output:
 4,Rajesh,99.9
 8,Rajesh,99.9
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
+99
+99.9
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -77,30 +54,15 @@ Expected Output:
 7,Deepak,99.0
 8,Deepak,99.0
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
+99
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
 This marks are not awarded to any student
 1010,Bob,90.0
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
-[Ljava.lang.String;@19dfb72a
-[Ljava.lang.String;@17c68925
+89
+90
 ----------------------------------------
 ########## Testcase 6: Failed ##########
 Expected Output: 
@@ -125,24 +87,9 @@ Expected Output:
 1009,Syed,95.0
 11009,Syed,95.0
 Your Output: 
-[Ljava.lang.String;@6a5fc7f7
-[Ljava.lang.String;@36d64342
-[Ljava.lang.String;@39ba5a14
-[Ljava.lang.String;@511baa65
-[Ljava.lang.String;@340f438e
-[Ljava.lang.String;@30c7da1e
-[Ljava.lang.String;@5b464ce8
-[Ljava.lang.String;@57829d67
-[Ljava.lang.String;@19dfb72a
-[Ljava.lang.String;@17c68925
-[Ljava.lang.String;@7e0ea639
-[Ljava.lang.String;@3d24753a
-[Ljava.lang.String;@59a6e353
-[Ljava.lang.String;@7a0ac6e3
-[Ljava.lang.String;@71be98f5
-[Ljava.lang.String;@6fadae5d
-[Ljava.lang.String;@17f6480
-[Ljava.lang.String;@2d6e8792
-[Ljava.lang.String;@2812cbfa
-[Ljava.lang.String;@2acf57e3
+91
+92
+93
+94
+95
 ----------------------------------------

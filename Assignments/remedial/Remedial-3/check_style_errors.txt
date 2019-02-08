@@ -4,5 +4,8 @@ Starting audit...
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:10:26: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:11:9: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:19:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:19:25: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:19:34: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 8 errors.
