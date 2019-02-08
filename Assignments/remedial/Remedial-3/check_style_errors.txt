@@ -33,12 +33,12 @@ Starting audit...
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:87:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:99:34: 'marks' hides a field. [HiddenField]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:104: Class Solution should be declared as final. [FinalClass]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:104: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:105:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:107:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:107:23: Parameter args should be final. [FinalParameters]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:113:25: 'marks' hides a field. [HiddenField]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:104:15: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:105:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:27: Parameter args should be final. [FinalParameters]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:114:25: 'marks' hides a field. [HiddenField]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 41 errors.

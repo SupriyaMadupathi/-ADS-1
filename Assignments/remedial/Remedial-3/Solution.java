@@ -101,11 +101,12 @@ public int compareTo(final Student that) {
         return marks[j].compareTo(marks[min]) > 0;
     }
 }
-class Solution {
-    private Solution() {
-    }
-    public  void main(String[] args) {
-    	Scanner sc = new Scanner(System.in);
+class Solution{
+	Solution() {
+
+	}
+	public  void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
     	Sorting  s = new Sorting();
     	while (sc.hasNextLine()) {
     		String stu = sc.nextLine();
@@ -117,9 +118,8 @@ class Solution {
     	}
     	s.insertionSort();
     	System.out.println(s.toString());
-    }
-
-    }
+	}
+}
 }
        
 
