@@ -46,7 +46,8 @@ class Student implements Comparable<Student> {
         }
         return 0;
     }
- class Sorting {
+}
+class Sorting {
         
     int fifty = 50;
     
@@ -55,7 +56,7 @@ class Student implements Comparable<Student> {
     int size;
 
     
-    Sorting() {
+    Sorting(int fifty) {
 
         marks = new Student[fifty];
         size = 0;
@@ -84,7 +85,7 @@ class Student implements Comparable<Student> {
 
         String s = "";
         for (int i = 0; i < size; i++) {
-            s += marks[i].getRollno() + "," + marks[i].getName() + "," + getMarks();
+            s += marks[i].getRollno() + "," + marks[i].getName() + "," + marks[i].getMarks();
         }
         return s;
     }
@@ -109,43 +110,28 @@ public class Solution{
 	Solution() {
 
 	}
-	public void main(String[] args) throws ClassNotFoundException {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-    	Sorting  s = new Sorting();
-    	int n = sc.nextInt();
+    	int n = Integer.parseInt(sc.nextLine());
+    	Sorting s = new Sorting(n);
     	for (int i= 0; i<n; i++){
     		String stu = sc.nextLine();
     		String[] data = stu.split(",");
-    		Student marks = new Student(data[0],
-                (data[1]), Double.parseDouble(data[2]));
+    		Student marks = new Student(data[0],data[1], Double.parseDouble(data[2]));
     		s.add(marks);
-
     	}
     	s.insertionSort();
     	//System.out.println(s.toString());
 
-    	int m = sc.nextInt();
+    	int m = Integer.parseInt(sc.nextLine());
 
     	for (int i = 0; i< m ;i++){
     		double a = Double.parseDouble(sc.nextLine());
     		int flag = 0;
     		for(int j = 0; j < s.getsize(); j++){
-    			// System.out.println(s);
-    			// flag++;
-    			// System.out.println(s[j]);
-    			// if (!s[j].getMarks().equals(a)) {
-    			// 	flag++;
-    		// 	} else {
-    				System.out.println(s);
-    		// 	}
-    		// } if (flag == s.getsize()) {
-    			// System.out.println("This marks are not awarded to any student");
+    			System.out.println(s);
     		}
     	}
     	
 	}
 }
-}
-
-       
-
