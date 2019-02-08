@@ -39,6 +39,6 @@ Starting audit...
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:107:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:107:23: Parameter args should be final. [FinalParameters]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:113:25: 'marks' hides a field. [HiddenField]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:126: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 41 errors.

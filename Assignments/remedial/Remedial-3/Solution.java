@@ -33,7 +33,7 @@ public int compareTo(final Student that) {
         } else {
         if (this.getRollno() == that.getRollno()) {
             return -1;
-        } else if (this.getRollno() == that.getRollno()) {
+        } else if (this.getRollno() != that.getRollno()) {
             return 1;
         } else {
             if (this.getMarks() < that.getMarks()) {
@@ -117,8 +117,6 @@ class Solution {
     	}
     	s.insertionSort();
     	System.out.println(s.toString());
-
-
     }
 
     }
