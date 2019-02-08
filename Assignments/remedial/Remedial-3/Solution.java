@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.lang.*;
 
-class Student {
+class Student implements Comparable<Student> {
 	String rollno;
 	String name;
 	Double marks;
@@ -26,7 +27,7 @@ class Student {
 	
 	public int compareTo(final Student that) {
 
-        if (this.getName().compareTo(that.getName())> 0) {
+        if (this.getName().compareTo(that.getName()) > 0) {
             return 1;
         } else if (this.getName().compareTo(that.getName()) < 0)  {
             return -1;
@@ -47,11 +48,11 @@ class Student {
     }
  class Sorting {
         
-    private final int fifty = 50;
+    int fifty = 50;
     
-    private Student[] marks;
+    Student[] marks;
     
-    private int size;
+    int size;
 
     
     Sorting() {
@@ -65,6 +66,9 @@ class Student {
         if (size > fifty) {
             resize();
         }
+    }
+    int getsize() {
+    	return size;
     }
     void resize() {
 
@@ -80,9 +84,9 @@ class Student {
 
         String s = "";
         for (int i = 0; i < size; i++) {
-            s += marks[i].getName() + ",";
+            s += marks[i].getRollno() + "," + marks[i].getName() + "," + getMarks();
         }
-        return s.substring(0, s.length() - 1);
+        return s;
     }
     public void insertionSort() {
         for (int i = 0; i < size - 1; i++) {
@@ -105,7 +109,7 @@ class Solution{
 	Solution() {
 
 	}
-	public  void main(String[] args) {
+	public void main(String[] args) throws ClassNotFoundException {
 		Scanner sc = new Scanner(System.in);
     	Sorting  s = new Sorting();
     	int n = sc.nextInt();
@@ -118,10 +122,30 @@ class Solution{
 
     	}
     	s.insertionSort();
-    	System.out.println(s.toString());
+    	//System.out.println(s.toString());
+
+    	int m = sc.nextInt();
+
+    	for (int i = 0; i< m ;i++){
+    		double a = Double.parseDouble(sc.nextLine());
+    		int flag = 0;
+    		for(int j = 0; j < s.getsize(); j++){
+    			// System.out.println(s);
+    			flag++;
+    			// System.out.println(s[j]);
+    			// if (!s[j].getMarks().equals(a)) {
+    			// 	flag++;
+    		// 	} else {
+    		// 		System.out.println(s[j].toString());
+    		// 	}
+    		// } if (flag == s.getsize()) {
+    			System.out.println("This marks are not awarded to any student");
+    		}
+    	}
     	
 	}
 }
 }
+
        
 
