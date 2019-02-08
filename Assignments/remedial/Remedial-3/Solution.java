@@ -26,14 +26,14 @@ class Student {
 	
 	public int compareTo(final Student that) {
 
-        if (this.getName() == that.getName()) {
+        if (this.getName().compareTo(that.getName())> 0) {
             return 1;
-        } else if (this.getName() != that.getName()) {
+        } else if (this.getName().compareTo(that.getName()) < 0)  {
             return -1;
         } else {
-        if (this.getRollno() == that.getRollno()) {
+        if (this.getRollno().compareTo(that.getRollno()) > 0) {
             return -1;
-        } else if (this.getRollno() != that.getRollno()) {
+        } else if (this.getRollno().compareTo(that.getRollno()) < 0) {
             return 1;
         } else {
             if (this.getMarks() < that.getMarks()) {
