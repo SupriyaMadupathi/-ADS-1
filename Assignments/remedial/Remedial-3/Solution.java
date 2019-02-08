@@ -131,15 +131,15 @@ class Solution{
     		int flag = 0;
     		for(int j = 0; j < s.getsize(); j++){
     			// System.out.println(s);
-    			flag++;
+    			// flag++;
     			// System.out.println(s[j]);
     			// if (!s[j].getMarks().equals(a)) {
     			// 	flag++;
     		// 	} else {
-    		// 		System.out.println(s[j].toString());
+    				System.out.println(s);
     		// 	}
     		// } if (flag == s.getsize()) {
-    			System.out.println("This marks are not awarded to any student");
+    			// System.out.println("This marks are not awarded to any student");
     		}
     	}
     	
