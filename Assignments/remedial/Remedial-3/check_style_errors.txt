@@ -38,7 +38,12 @@ Starting audit...
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:105:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:108:27: Parameter args should be final. [FinalParameters]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:114:25: 'marks' hides a field. [HiddenField]
-[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:19: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:25: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:26: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:112:33: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:115:25: 'marks' hides a field. [HiddenField]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:122: Line has trailing spaces. [RegexpSingleline]
+[ERROR] G:\-ADS-1\Assignments\remedial\Remedial-3\Solution.java:126: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 46 errors.

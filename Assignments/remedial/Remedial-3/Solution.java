@@ -44,8 +44,8 @@ class Student {
         }
         }
         return 0;
-}
-class Sorting {
+    }
+ class Sorting {
         
     private final int fifty = 50;
     
@@ -108,7 +108,8 @@ class Solution{
 	public  void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
     	Sorting  s = new Sorting();
-    	while (sc.hasNextLine()) {
+    	int n = sc.nextInt();
+    	for (int i= 0; i<n; i++){
     		String stu = sc.nextLine();
     		String[] data = stu.split(",");
     		Student marks = new Student(data[0],
@@ -118,6 +119,7 @@ class Solution{
     	}
     	s.insertionSort();
     	System.out.println(s.toString());
+    	
 	}
 }
 }
