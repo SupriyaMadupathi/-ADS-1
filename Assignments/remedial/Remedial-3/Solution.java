@@ -130,9 +130,18 @@ public class Solution{
     		double a = Double.parseDouble(sc.nextLine());
     		int flag = 0;
     		for(int j = 0; j < s.getsize(); j++){
+                flag++;
+             //    if (!s[0].getMarks().equals(a)) {
+             //     flag++;
+             // } else {
+                    // System.out.println(s)
     			System.out.println(s);
-    		}
+    		// }
+            if (flag == s.getsize()) {
+                System.out.println("This marks are not awarded to any student");
+            }
     	}
     	
 	}
+}
 }
