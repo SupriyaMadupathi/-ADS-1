@@ -102,7 +102,7 @@ public int compareTo(final Student that) {
     }
 }
 class Solution {
-    Solution() {
+    private Solution() {
     }
     public  void main(String[] args) {
     	Scanner sc = new Scanner(System.in);
