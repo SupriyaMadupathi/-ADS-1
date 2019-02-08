@@ -86,6 +86,7 @@ class Sorting {
         String s = "";
         for (int i = 0; i < size; i++) {
             s += marks[i].getRollno() + "," + marks[i].getName() + "," + marks[i].getMarks();
+            break;
         }
         return s;
     }
