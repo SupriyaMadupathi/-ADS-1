@@ -24,7 +24,7 @@ class Student {
 		return this.marks;
 	}
 	
-public int compareTo(final Student that) {
+	public int compareTo(final Student that) {
 
         if (this.getName() == that.getName()) {
             return 1;
@@ -44,8 +44,8 @@ public int compareTo(final Student that) {
         }
         }
         return 0;
-    }
-    class Sorting {
+}
+class Sorting {
         
     private final int fifty = 50;
     
