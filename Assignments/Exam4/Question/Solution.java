@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Arrays;
+// import java.util.ArrayList;
+// import java.util.Arrays;
 
 class Solution{
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ class Solution{
 
         }
 
-        for (Integer each :queries ) {
+        for (Integer each : queries ) {
             Double answer = percentiles.get(each);
             System.out.println((answer*100.0)/100.0);
         }
