@@ -21,7 +21,7 @@ class Solution{
         sc.nextLine();
         int temp;
         int[] queries = new int[m];
-        Double percent=0.0;
+        Double percent = 0.0;
 
 
         for (int i=0;i<m ;i++ ) {
@@ -36,7 +36,7 @@ class Solution{
 
         for (Integer each : queries ) {
             Double answer = percentiles.get(each);
-            System.out.println((answer*100.0)/100.0);
+            System.out.println((answer*n)/100.0);
         }
 
         // System.out.println(percentiles);
