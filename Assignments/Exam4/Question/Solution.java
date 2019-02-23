@@ -9,7 +9,7 @@ class Solution{
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         sc.nextLine();
-        String[] line = new String[10];
+        String[] line = new String[20];
         Double[] onlyscores = new Double[n];
         Map<Integer, Double> scores = new HashMap<>();
         Map<Integer, Double> percentiles = new HashMap<>();
@@ -37,8 +37,8 @@ class Solution{
         }
 
         for (Integer each :queries ) {
-            Double answer =percentiles.get(each);
-            System.out.println(Math.round(answer*100.0)/100.0);
+            Double answer = percentiles.get(each);
+            System.out.println((answer*100.0)/100.0);
         }
 
         // System.out.println(percentiles);
