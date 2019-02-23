@@ -36,7 +36,7 @@ class Solution{
 
         for (Integer each : queries ) {
             Double answer = percentiles.get(each);
-            System.out.println((answer*n)/100.0);
+            System.out.println((answer*100)/100.0);
         }
 
         // System.out.println(percentiles);
