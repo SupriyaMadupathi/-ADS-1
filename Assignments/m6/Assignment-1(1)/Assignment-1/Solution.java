@@ -1,10 +1,13 @@
 import java.util.Scanner;
 import java.lang.String;
+import java.util.Arrays;
 class Node {
     char data;
     Node next;
 
-    Node() {}
+    Node() {
+
+    }
 
     Node(char item1) {
         this.data = item1;
@@ -97,10 +100,8 @@ class AddLargeNumbers {
 }
 
 public class Solution {
-    Solution() {
-        
-    }
-    public static void main(String[] args) {
+    
+    public  void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
