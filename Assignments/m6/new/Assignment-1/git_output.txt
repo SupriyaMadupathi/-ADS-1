@@ -1,0 +1,13 @@
+warning: LF will be replaced by CRLF in Assignments/m6/new/Assignment-1/Solution.java.
+The file will have its original line endings in your working directory.
+[master dae40f9] "ads1_m6_a1: 12/12 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 13 files changed, 264 insertions(+), 147 deletions(-)
+ rewrite Assignments/m6/new/Assignment-1/AddLargeNumbers.class (99%)
+ create mode 100644 Assignments/m6/new/Assignment-1/LinkedList.class
+ rewrite Assignments/m6/new/Assignment-1/Node.class (100%)
+ rewrite Assignments/m6/new/Assignment-1/Solution1.class (100%)
+ rewrite Assignments/m6/new/Assignment-1/Solution1.java (92%)
+ create mode 100644 Assignments/m6/new/Assignment-1/Test$Stack.class
+ create mode 100644 Assignments/m6/new/Assignment-1/Test.class
+ create mode 100644 Assignments/m6/new/Assignment-1/stack.class
+Logon failed, use ctrl+c to cancel basic credential prompt.
