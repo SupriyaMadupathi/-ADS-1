@@ -26,7 +26,7 @@ public class Solution {
         Float median = 0.0f;
         for (int i = 0; i < n; i++) {
             Float val = scan.nextFloat();
-            System.out.println(val);
+            System.out.println(val + " hh");
             if (val > median) {
                 minpq.insert(val);
             } else {
