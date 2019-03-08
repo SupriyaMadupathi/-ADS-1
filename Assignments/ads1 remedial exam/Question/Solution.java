@@ -33,12 +33,12 @@ class Solution{
 class Student implements Comparable<Student>{
 	int roll;
 	String name;
-	String dept;
+	String degree;
 	Double percentage;
 	Student(int r, String n, String d, Double p){
 		this.roll = r;
 		this.name = n;
-		this. dept = d;
+		this. degree = d;
 		this.percentage = p;
 	}
 	int getroll(){
@@ -47,8 +47,8 @@ class Student implements Comparable<Student>{
 	String getname(){
 		return this.name;
 	}
-	String getdept(){
-		return this.dept;
+	String getdegree(){
+		return this.degree;
 	}
 	Double getpercent(){
 		return this.percentage;
@@ -70,6 +70,6 @@ class Student implements Comparable<Student>{
 		return -1;
 	}
 	public String toString(){
-		return this.getroll()+","+this.getname()+","+this.getdept()+","+this.getpercent();
+		return this.getroll()+","+this.getname()+","+this.getdegree()+","+this.getpercent();
 	}
 }
