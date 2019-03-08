@@ -1,0 +1,18 @@
+10001,Kumar,ME,99.2
+20002,Ramya,MS,98.6
+10002,Hari,MS,98.4
+10003,Siva,MS,97.4
+10004,Ramu,M.Tech,97.0
+10005,Murthy,M.Tech,96.0
+10006,Manasa,ME,95.0
+20007,Manasa,ME,93.0
+20001,Deepak,ME,92.3
+20003,Vipul,MS,89.3
+
+1: 30004,Akhil,ME,89.2
+2: 30001,Vamsi,M.Tech,89.0
+3: 30002,Lakshmi,ME,87.3
+4: 20004,Shiva,ME,86.4
+5: 20005,Ramu,M.Tech,85.0
+6: 20006,Murthy,M.Tech,84.0
+7: 30003,Bharath,M.Tech,76.5

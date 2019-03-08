@@ -1,0 +1,191 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+10003,Kumar,MS,92.4
+10001,Deepak,ME,92.3
+30001,Vamsi,M.Tech,98.0
+
+1: 20001,Siva,ME,92.3
+2: 20003,Vipul,MS,89.3
+3: 20002,Ramya,MS,88.6
+4: 30002,Lakshmi,ME,87.3
+5: 10002,Hari,MS,86.4
+6: 20004,Shiva,ME,86.4
+7: 30003,Bharath,M.Tech,76.5
+Your Output: 
+10003,Kumar,MS,92.4
+20001,Siva,ME,92.3
+30001,Vamsi,M.Tech,98.0
+
+0: 10001,Deepak,ME,92.3
+1: 10001,Deepak,ME,92.3
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+10003,Siva,MS,92.4
+20002,Ramya,MS,98.6
+20007,Manasa,ME,93.0
+
+1: 20001,Deepak,ME,92.3
+2: 10001,Kumar,ME,92.2
+3: 20003,Vipul,MS,89.3
+4: 30004,Akhil,ME,89.2
+5: 10004,Ramu,M.Tech,89.0
+6: 30001,Vamsi,M.Tech,89.0
+7: 10005,Murthy,M.Tech,88.0
+8: 30002,Lakshmi,ME,87.3
+9: 10006,Manasa,ME,87.0
+10: 10002,Hari,MS,86.4
+11: 20004,Shiva,ME,86.4
+12: 20005,Ramu,M.Tech,85.0
+13: 20006,Murthy,M.Tech,84.0
+14: 30003,Bharath,M.Tech,76.5
+Your Output: 
+10003,Siva,MS,92.4
+20002,Ramya,MS,98.6
+20007,Manasa,ME,93.0
+
+0: 20001,Deepak,ME,92.3
+1: 10001,Kumar,ME,92.2
+2: 20003,Vipul,MS,89.3
+3: 30004,Akhil,ME,89.2
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+10001,Kumar,ME,92.2
+10002,Hari,MS,86.4
+10003,Siva,MS,92.4
+10004,Ramu,M.Tech,89.0
+10005,Murthy,M.Tech,88.0
+10006,Manasa,ME,87.0
+20001,Deepak,ME,92.3
+20002,Ramya,MS,98.6
+20003,Vipul,MS,89.3
+20004,Shiva,ME,86.4
+20005,Ramu,M.Tech,85.0
+20006,Murthy,M.Tech,84.0
+20007,Manasa,ME,93.0
+30001,Vamsi,M.Tech,89.0
+30002,Lakshmi,ME,87.3
+30004,Akhil,ME,89.2
+
+1: 30003,Bharath,M.Tech,76.5
+Your Output: 
+10001,Kumar,ME,92.2
+10001,Kumar,ME,92.2
+10003,Siva,MS,92.4
+10004,Ramu,M.Tech,89.0
+10005,Murthy,M.Tech,88.0
+10006,Manasa,ME,87.0
+20001,Deepak,ME,92.3
+20002,Ramya,MS,98.6
+20003,Vipul,MS,89.3
+20004,Shiva,ME,86.4
+10002,Hari,MS,86.4
+20005,Ramu,M.Tech,85.0
+20007,Manasa,ME,93.0
+30001,Vamsi,M.Tech,89.0
+30002,Lakshmi,ME,87.3
+30004,Akhil,ME,89.2
+
+0: 20006,Murthy,M.Tech,84.0
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+10001,Kumar,ME,99.2
+20002,Ramya,MS,98.6
+10002,Hari,MS,98.4
+
+1: 10003,Siva,MS,97.4
+2: 10004,Ramu,M.Tech,97.0
+3: 10005,Murthy,M.Tech,96.0
+4: 10006,Manasa,ME,95.0
+5: 20007,Manasa,ME,93.0
+6: 20001,Deepak,ME,92.3
+7: 20003,Vipul,MS,89.3
+8: 30004,Akhil,ME,89.2
+9: 30001,Vamsi,M.Tech,89.0
+10: 30002,Lakshmi,ME,87.3
+11: 20004,Shiva,ME,86.4
+12: 20005,Ramu,M.Tech,85.0
+13: 20006,Murthy,M.Tech,84.0
+14: 30003,Bharath,M.Tech,76.5
+Your Output: 
+10001,Kumar,ME,99.2
+20002,Ramya,MS,98.6
+10002,Hari,MS,98.4
+
+0: 10003,Siva,MS,97.4
+1: 10004,Ramu,M.Tech,97.0
+2: 20007,Manasa,ME,93.0
+3: 20001,Deepak,ME,92.3
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+10001,Kumar,ME,99.1
+10002,Hari,MS,99.1
+10003,Siva,MS,99.1
+10004,Ramu,M.Tech,99.1
+10006,Manasa,ME,99.1
+20001,Deepak,ME,99.1
+
+1: 20002,Ramya,MS,99.1
+2: 20003,Vipul,MS,99.1
+3: 20004,Shiva,ME,99.1
+4: 20005,Ramu,M.Tech,99.1
+5: 20007,Manasa,ME,99.1
+6: 10005,Murthy,M.Tech,98.7
+7: 20006,Murthy,M.Tech,98.7
+Your Output: 
+10006,Manasa,ME,99.1
+20007,Manasa,ME,99.1
+20005,Ramu,M.Tech,99.1
+20004,Shiva,ME,99.1
+20003,Vipul,MS,99.1
+20003,Vipul,MS,99.1
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+10001,Kumar,ME,99.2
+20002,Ramya,MS,98.6
+10002,Hari,MS,98.4
+10003,Siva,MS,97.4
+10004,Ramu,M.Tech,97.0
+10005,Murthy,M.Tech,96.0
+10006,Manasa,ME,95.0
+20007,Manasa,ME,93.0
+20001,Deepak,ME,92.3
+20003,Vipul,MS,89.3
+
+1: 30004,Akhil,ME,89.2
+2: 30001,Vamsi,M.Tech,89.0
+3: 30002,Lakshmi,ME,87.3
+4: 20004,Shiva,ME,86.4
+5: 20005,Ramu,M.Tech,85.0
+6: 20006,Murthy,M.Tech,84.0
+7: 30003,Bharath,M.Tech,76.5
+Your Output: 
+10001,Kumar,ME,99.2
+20002,Ramya,MS,98.6
+10002,Hari,MS,98.4
+10003,Siva,MS,97.4
+10004,Ramu,M.Tech,97.0
+10004,Ramu,M.Tech,97.0
+10004,Ramu,M.Tech,97.0
+10004,Ramu,M.Tech,97.0
+10004,Ramu,M.Tech,97.0
+10004,Ramu,M.Tech,97.0
+----------------------------------------
+########## Testcase 6: Failed ##########
+Expected Output: 
+10001,Kumar,ME,99.2
+10002,Hari,MS,98.4
+10003,Siva,MS,97.4
+10004,Ramu,M.Tech,97.0
+10005,Bharath,M.Tech,76.5
+Your Output: 
+10001,Kumar,ME,99.2
+10002,Hari,MS,98.4
+10003,Siva,MS,97.4
+10003,Siva,MS,97.4
+10003,Siva,MS,97.4
+----------------------------------------

@@ -1,0 +1,21 @@
+6
+Apply 10001,Kumar,ME,99.1
+Apply 10002,Hari,MS,99.1
+Apply 10003,Siva,MS,99.1
+Apply 10004,Ramu,M.Tech,99.1
+Apply 10005,Murthy,M.Tech,98.7
+Apply 10006,Manasa,ME,99.1
+Recruit_Top_Candidate
+Apply 20001,Deepak,ME,99.1
+Apply 20002,Ramya,MS,99.1
+Apply 20003,Vipul,MS,99.1
+Apply 20004,Shiva,ME,99.1
+Apply 20005,Ramu,M.Tech,99.1
+Apply 20006,Murthy,M.Tech,98.7
+Apply 20007,Manasa,ME,99.1
+Recruit_Top_Candidate
+Recruit_Top_Candidate
+Recruit_Top_Candidate
+Recruit_Top_Candidate
+Recruit_Top_Candidate
+Ranking
