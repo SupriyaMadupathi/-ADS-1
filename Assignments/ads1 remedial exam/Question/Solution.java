@@ -35,11 +35,11 @@ class Student implements Comparable<Student>{
 	String name;
 	String degree;
 	Double percentage;
-	Student(int roll1, String name1, String degree1, Double per){
-		this.roll = roll;
-		this.name = name1;
-		this. degree = degree1;
-		this.percentage = per;
+	Student(int r, String n, String d, Double p){
+		this.roll = r;
+		this.name = n;
+		this. degree = d;
+		this.percentage = p;
 	}
 	int getroll(){
 		return this.roll;
